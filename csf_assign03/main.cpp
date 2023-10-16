@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 
@@ -34,12 +35,23 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    cout << "number of sets in the cache: " << cacheSets << "\n";
-    cout << "number of blocks in each set: " << numBlocks << "\n";
-    cout << "number of bytes in each block: " << blockSize << "\n";
-    cout << "write-allocate or no-write-allocate: " << writeAlloc << "\n";
-    cout << "write-through or write-back: " << writeThru_back << "\n";
-    cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
+    // cout << "number of sets in the cache: " << cacheSets << "\n";
+    // cout << "number of blocks in each set: " << numBlocks << "\n";
+    // cout << "number of bytes in each block: " << blockSize << "\n";
+    // cout << "write-allocate or no-write-allocate: " << writeAlloc << "\n";
+    // cout << "write-through or write-back: " << writeThru_back << "\n";
+    // cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
+
+    string line; //holds current line in trace file
+    string loadStore; //l or s
+    string address; //address
+    while (getline(std::cin, line)) {
+        cin >> loadStore >> address;
+        cout << "load or store: " << loadStore << "\n";
+        cout << "address: " << address << "\n";
+        
+    }
+
 
     return 0;
 }
