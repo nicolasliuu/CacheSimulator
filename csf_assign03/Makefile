@@ -5,7 +5,7 @@ CFLAGS = $(CONSERVATIVE_FLAGS) $(DEBUGGING_FLAGS)
 csim: main.o 
 	g++ -o csim main.o 
 
-main.o: main.cpp # include main.h later if needed
+main.o: main.cpp Cache.h Set.h Slot.h# include main.h later if needed
 	g++ -c main.cpp $(CFLAGS)
 
 .PHONY: clean

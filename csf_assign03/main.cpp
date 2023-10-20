@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Cache.h"
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -14,7 +15,7 @@ int main(int argc, char *argv[]) {
     // Check number of sets is a power of 2
     if ((cacheSets & (cacheSets - 1)) != 0) {
         fprintf(stderr, "Number of sets must be a power of 2\n");
-        return 1; 
+        return 1;
     }
 
     // Check block size is a power of 2
@@ -45,13 +46,17 @@ int main(int argc, char *argv[]) {
     string line; //holds current line in trace file
     string loadStore; //l or s
     string address; //address
-    while (getline(std::cin, line)) {
-        cin >> loadStore >> address;
-        cout << "load or store: " << loadStore << "\n";
-        cout << "address: " << address << "\n";
+    // while (getline(std::cin, line)) {
+    //     cin >> loadStore >> address;
+    //     cout << "load or store: " << loadStore << "\n";
+    //     cout << "address: " << address << "\n";
         
-    }
+    // }
 
+    Cache c(cacheSets, numBlocks, blockSize, writeAlloc, writeThru_back, lru_fifo);
+    c.printParameters();
+    cout << "tag: " << c.getTag("23DC13AF") << "\n";
+    cout << "index: " << c.getIndex("23DC13AF") << "\n";
 
     return 0;
 }
