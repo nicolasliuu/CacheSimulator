@@ -26,6 +26,15 @@ class Cache {
         
         std::unordered_map<uint32_t, Set> sets;
 
+        int totalLoads;
+        int totalStores;
+        int loadHits;
+        int loadMisses;
+        int storeHits;
+        int storeMisses;
+        int totalCycles;
+
+
         Cache(int sets, int blocks, int size, string alloc, string writeThru, string lruOrFifo) {
             cacheSets = sets;
             numBlocks = blocks;
@@ -46,7 +55,6 @@ class Cache {
                 writeThru = true;
                 writeBack = false;
             } else {
-                cout << "here\n";
                 writeThru = false;
                 writeBack = true;
             }
@@ -145,18 +153,44 @@ class Cache {
         return decimalAddress >> 22;
     }
 
+    int getOffset(string address) {
+        int decimalAddress = stoi(address, 0, 16);
+
+        decimalAddress = decimalAddress << 24;
+        return decimalAddress >> 24;
+    }
+
     void incrementCounter() {
         counter++;
     }
 
-    void loadAddress() {
+    void loadAddress(string address) {
+        //dont actually load shit into the cpu, thats what the counter is for!!
 
+        //check if address in cache
+        //address not in cache:
+            //put address in cache, load to cpu
+        //address in cache:
+            //load to cpu
     }
 
     void storeAddress() {
 
     }
 
+    bool inCache(string address) {
+        //go to spot in hashmap where the address should be
+        //check valid
+        //if not valid, not in cache
+
+        int index = getIndex(address); // key for map of sets
+        int tag = getTag(address); // key for map of slots
+        Set addressSet = sets.at(index);
+        Slot addressSlot = addressSet.getSlot(tag);
+
+        return addressSlot.isValid();
+
+    }
         
 };
 #endif

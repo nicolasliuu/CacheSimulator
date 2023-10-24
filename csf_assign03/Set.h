@@ -23,7 +23,10 @@ class Set {
     std::unordered_map<uint32_t, Slot> slots;
 
     //put functions below (implement if the functions are small enough??)
-
+    public:
+        Slot getSlot(uint32_t key) {
+            return slots.at(key);
+        }
 
 };
 #endif  
