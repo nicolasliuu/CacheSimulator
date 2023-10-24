@@ -1,5 +1,7 @@
 #include <iostream>
+#include <fstream>
 #include <string>
+#include "Cache.h"
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -13,7 +15,7 @@ int main(int argc, char *argv[]) {
     // Check number of sets is a power of 2
     if ((cacheSets & (cacheSets - 1)) != 0) {
         fprintf(stderr, "Number of sets must be a power of 2\n");
-        return 1; 
+        return 1;
     }
 
     // Check block size is a power of 2
@@ -34,12 +36,27 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    cout << "number of sets in the cache: " << cacheSets << "\n";
-    cout << "number of blocks in each set: " << numBlocks << "\n";
-    cout << "number of bytes in each block: " << blockSize << "\n";
-    cout << "write-allocate or no-write-allocate: " << writeAlloc << "\n";
-    cout << "write-through or write-back: " << writeThru_back << "\n";
-    cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
+    // cout << "number of sets in the cache: " << cacheSets << "\n";
+    // cout << "number of blocks in each set: " << numBlocks << "\n";
+    // cout << "number of bytes in each block: " << blockSize << "\n";
+    // cout << "write-allocate or no-write-allocate: " << writeAlloc << "\n";
+    // cout << "write-through or write-back: " << writeThru_back << "\n";
+    // cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
+
+    string line; //holds current line in trace file
+    string loadStore; //l or s
+    string address; //address
+    // while (getline(std::cin, line)) {
+    //     cin >> loadStore >> address;
+    //     cout << "load or store: " << loadStore << "\n";
+    //     cout << "address: " << address << "\n";
+        
+    // }
+
+    Cache c(cacheSets, numBlocks, blockSize, writeAlloc, writeThru_back, lru_fifo);
+    c.printParameters();
+    cout << "tag: " << c.getTag("23DC13AF") << "\n";
+    cout << "index: " << c.getIndex("23DC13AF") << "\n";
 
     return 0;
 }

@@ -4,6 +4,8 @@
 #include <cstdlib>
 #include <string>
 #include <unordered_map>
+#include <cstdint>
+#include "Slot.h"
 
 class Set {
     // int cacheSets;
@@ -23,4 +25,5 @@ class Set {
     //put functions below (implement if the functions are small enough??)
 
 
-}
+};
+#endif  
