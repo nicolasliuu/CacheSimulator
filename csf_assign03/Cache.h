@@ -38,16 +38,21 @@ class Cache {
         int storeMisses;
         int totalCycles;
 
-        Cache(int sets, int blocks, int size, string alloc, string writeThru, string lruOrFifo) {
-            cacheSets = sets;
+        Cache(int num_sets, int blocks, int size, string alloc, string writeThru, string lruOrFifo) {
+            cacheSets = num_sets;
             numBlocks = blocks;
             blockSize = size;
-            set_index_bits = log(sets) / log(2);
+            set_index_bits = log(num_sets) / log(2);
             block_offset_bits = log(size) / log(2);
             tag_bits = 32 - (set_index_bits + block_offset_bits);
             writeAlloc = alloc;
             writeThru_back = writeThru;
             lru_fifo = lruOrFifo;
+
+            // Create the cache sets
+            for (int i = 0; i < cacheSets; ++i) {
+                sets[i] = Set(numBlocks);
+            }
 
             if(writeAlloc.compare("write-allocate") == 0) {
                 writeAllocate = true;
@@ -89,8 +94,6 @@ class Cache {
             cout << "s" << set_index_bits << "\n";
         }
     
-    //put functions below
-
     int getTag(string address) {
         int decimalAddress = stoi(address, 0, 16);
 
@@ -124,37 +127,41 @@ class Cache {
 
     void loadAddress(string address) {
         // Get the index of the address and check the particular Set at that index, call hasAddress
-        int index = getIndex(address);
-        int tag = getTag(address);
+        uint32_t index = getIndex(address);
+        uint32_t tag = getTag(address);
 
-        if (sets.at(index).hasSlot(tag)) {
-            Slot* slot = sets.at(index).getSlot(tag)
-        }
+        if (sets[index].hasSlot(tag)) {
+            // Cache hit
+            Slot& slot = sets[index].getSlot(tag);
 
-        //address not in cache:
-        if (slot.isValid() && slot.getTag() == tag) {
-            // Increment load hits 
-            loadHits++;
+            if (slot.isValid() && slot.getTag() == tag) {
+                // Increment load hits 
+                loadHits++;
 
-            // Update information for lru/fifo
-            if (lru) {
+                // Update information for lru/fifo
+                if (lru) {
+                    // nothing for now, just testing counts
+                }
 
+                // Update cycle:
+                totalCycles++;          // Only loading to cache
             }
-
-            // Update cycle:
-            totalCycles++;          // Only loading to cache
         }
         else {
+            // Create a new slot
+            sets[index].addSlot(tag);
+            Slot& slot = sets[index].getSlot(tag);
+            
             // Increment load misses
             loadMisses++;   
 
             // Change slot metadata
             slot.setValid(true);
-            slot.setTag(getTag(address));
+            slot.setTag(tag);
 
             // Update information for lru/fifo
             if (lru) {
-
+                // nothing for now, just testing counts
             }
 
             // Update cycle:
@@ -165,26 +172,37 @@ class Cache {
         totalLoads++;
     }
 
-    void storeAddress() {
+    void storeAddress(string address) {
 
     }
 
-    bool inCache(string address) {
-        //go to spot in hashmap where the address should be
-        //check valid
-        //if not valid, not in cache
-
-        int index = getIndex(address); // key for map of sets
-        int tag = getTag(address); // key for map of slots
-        Set addressSet = sets.at(index);
-        if (addressSet.hasSlot(tag)) {
-            Slot addressSlot = addressSet.getSlot(tag);
-        } else {
-            return false;
-        }
-        return addressSlot.isValid();
-
+    void printStatistics() {
+        cout << "Total loads: " << totalLoads << "\n";
+        cout << "Total stores: " << totalStores << "\n";
+        cout << "Load hits: " << loadHits << "\n";
+        cout << "Load misses: " << loadMisses << "\n";
+        cout << "Store hits: " << storeHits << "\n";
+        cout << "Store misses: " << storeMisses << "\n";
+        cout << "Total cycles: " << totalCycles << "\n";
     }
+
+    // bool inCache(string address) {
+    //     //go to spot in hashmap where the address should be
+    //     //check valid
+    //     //if not valid, not in cache
+
+    //     int index = getIndex(address); // key for map of sets
+    //     int tag = getTag(address); // key for map of slots
+    //     Slot addressSlot;
+    //     Set addressSet = sets.at(index);
+    //     if (addressSet.hasSlot(tag)) {
+    //         addressSlot = addressSet.getSlot(tag);
+    //     } else {
+    //         return false;
+    //     }
+    //     return addressSlot.isValid();
+
+    // }
         
 };
 #endif

@@ -8,28 +8,30 @@
 #include "Slot.h"
 
 class Set {
-    // int cacheSets;
-    // int numBlocks;
-    // int blockSize;
-    // string writeAlloc;
-    // string writeThru_back;
-    // string lru_fifo;
-    // bool writeAllocate;
-    // bool noWriteAllocate;
-    // bool writeThru;
-    // bool writeBack;
-    // bool lru;
-    // bool fifo;
-    std::unordered_map<uint32_t, Slot> slots;
+    private: 
+        std::unordered_map<uint32_t, Slot> slots;
+        int maxBlocks;
 
-    //put functions below (implement if the functions are small enough??)
     public:
+
+        Set() : maxBlocks(0) { }
+
+        Set(int numBlocks) : maxBlocks(numBlocks) { }
+
         Slot& getSlot(uint32_t tag) {
-            return slots.at(tag);
+            return slots[tag];
+        }
+
+        void addSlot(uint32_t tag) {
+            slots[tag] = Slot();
         }
 
         bool hasSlot(uint32_t tag) {
             return slots.find(tag) != slots.end();
+        }
+
+        bool isFull() {
+            return slots.size() == maxBlocks;
         }
 
         

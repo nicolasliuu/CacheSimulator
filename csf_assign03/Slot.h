@@ -5,15 +5,18 @@
 #include <cstdint>
 
 class Slot {
-    uint32_t tag;
-    bool valid;
-    uint32_t load_ts;//fifo
-    uint32_t access_ts;//lru
-    bool dirty;
+    private:
+        uint32_t tag;
+        bool valid;
+        uint32_t load_ts;//fifo
+        uint32_t access_ts;//lru
+        bool dirty;
 
     //put functions below (implement if the functions are small enough??)
 
     public:
+        Slot() : tag(0), valid(false), load_ts(0), access_ts(0), dirty(false) {} // Default constructor
+
         uint32_t getTag() {
             return tag;
         }
@@ -36,6 +39,11 @@ class Slot {
 
         void setTag(uint32_t newTag) {
             tag = newTag;
+            valid = true;
+        }
+
+        void used() { // Call this when a slot is used
+            access_ts++;
         }
 
         void setLoad_ts(uint32_t new_ts) {

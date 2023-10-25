@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include "Cache.h"
 using namespace std;
@@ -43,9 +44,7 @@ int main(int argc, char *argv[]) {
     // cout << "write-through or write-back: " << writeThru_back << "\n";
     // cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
 
-    string line; //holds current line in trace file
-    string loadStore; //l or s
-    string address; //address
+
     // while (getline(std::cin, line)) {
     //     cin >> loadStore >> address;
     //     cout << "load or store: " << loadStore << "\n";
@@ -55,20 +54,51 @@ int main(int argc, char *argv[]) {
 
     Cache c(cacheSets, numBlocks, blockSize, writeAlloc, writeThru_back, lru_fifo);
 
-    // Process our input file
-    while (
-        
-    )
+    string line; //holds current line in trace file
+    string loadStore; //l or s
+    string address; //address
 
+    // // Process our input file
+    // while (cin >> loadStore >> address) {
+    //     if (loadStore == "l") {
+    //         c.loadAddress(address);
+    //         // cout << "load\n";
+    //     } else if (loadStore == "s") {
+    //         c.storeAddress(address);
+    //         // cout << "store\n";
+    //     } else {
+    //         fprintf(stderr, "Error: loadStore is not l or s\n");
+    //         return 1;
+    //     }
+    // }
+
+    while (getline(cin, line)) {
+        if (line.empty()) {
+            continue;  // skip processing for this line
+        }
+        istringstream iss(line);
+        if (!(iss >> loadStore >> address)) {
+            cerr << "Failed to read line: " << line << endl;
+            continue;  // skip processing for this line
+        }
+
+        if (loadStore == "l") {
+            c.loadAddress(address);
+        } else if (loadStore == "s") {
+            c.storeAddress(address);
+        } else {
+            cerr << "Error: loadStore (" << loadStore << ") is not l or s on line: " << line << endl;
+            return 1;
+        }
+    }
 
 
     // Testing purposes
-    c.printParameters();
-    cout << "tag: " << c.getTag("23DC13AF") << "\n";
-    cout << "index: " << c.getIndex("23DC13AF") << "\n";
-    
+    // c.printParameters();
+    // cout << "tag: " << c.getTag("23DC13AF") << "\n";
+    // cout << "index: " << c.getIndex("23DC13AF") << "\n";
 
-
+    c.printStatistics();
 
     return 0;
 }
