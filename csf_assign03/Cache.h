@@ -194,21 +194,36 @@ class Cache {
 
         int index = getIndex(address); // key for map of sets
         int tag = getTag(address); // key for map of slots
-        Set addressSet = sets.at(index);
-        Slot addressSlot = addressSet.getSlot(tag);
 
-        if(inCache(address)) { //hit
-            if(writeThru) {
+        if(sets[index].hasSlot(tag)) { //hit
+            Slot& slot = sets[index].getSlot(tag);
+            storeHits++;
+            
+
+            if(writeThru) { //write to cache and memory
                 totalCycles += 101;
             } 
 
-            if(writeBack) {
-                addressSlot.setDirty(true);
+            if(writeBack) { //write to cache only and write to memory when block is evicted
+                slot.setDirty(true);
                 totalCycles++;
             }
         } else { //miss
             if(writeAllocate) {
-                addressSlot.setTag(tag);
+                if(sets[index].isFull()) { //need to evict
+                    if(lru) {
+                        //iterate thru set hashmap and see which block has lowest access_ts
+                    }
+                }
+
+                sets[index].addSlot(tag);
+                if(writeBack) {
+                    sets[index].getSlot(tag).setDirty(true);
+                }
+
+                if(lru) {
+                    sets[index].getSlot(tag).setAccess_ts(counter);
+                }
                 totalCycles++;
             }
 
@@ -231,7 +246,7 @@ class Cache {
         } else {
             return false;
         }
-        return addressSlot.isValid();
+        // return addressSlot.isValid();
 
     }
 

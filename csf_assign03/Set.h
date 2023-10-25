@@ -5,11 +5,14 @@
 #include <string>
 #include <unordered_map>
 #include <cstdint>
+#include <vector>
+#include <algorithm>
 #include "Slot.h"
 
 class Set {
     private: 
-        std::unordered_map<uint32_t, Slot> slots;
+        // std::unordered_map<uint32_t, Slot> slots;//easier if this were a vector T-T
+        std::vector<Slot> slots;//indices aren't associated with tags
         int maxBlocks;
         int currBlocks;
 
@@ -27,7 +30,12 @@ class Set {
         }
 
         Slot& getSlot(uint32_t tag) {
-            return slots.at(tag);
+            // return slots[tag];
+            for(int i = 0; i < slots.size(); i++) {
+                if (slots[i].getTag() == tag) {
+                    return slots[i];
+                }
+            }
         }
 
         void updateSlot(uint32_t tag) {
@@ -59,7 +67,13 @@ class Set {
         }
 
         bool hasSlot(uint32_t tag) {
-            return slots.find(tag) != slots.end() && slots.find(tag)->second.isValid();
+            // return slots.find(tag) != slots.end();
+            for(int i = 0; i < slots.size(); i++) {
+                if (slots[i].getTag() == tag) {
+                    return true;
+                }
+            }
+            return false;
         }
 
         bool isFull() {
