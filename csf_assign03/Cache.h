@@ -234,6 +234,15 @@ class Cache {
         return addressSlot.isValid();
 
     }
-        
+
+    void printStatistics() {
+        cout << "Total loads: " << totalLoads << "\n";
+        cout << "Total stores: " << totalStores << "\n";
+        cout << "Load hits: " << loadHits << "\n";
+        cout << "Load misses: " << loadMisses << "\n";
+        cout << "Store hits: " << storeHits << "\n";
+        cout << "Store misses: " << storeMisses << "\n";
+        cout << "Total cycles: " << totalCycles << "\n";
+    }
 };
 #endif
