@@ -95,13 +95,13 @@ class Cache {
         }
     
     int getTag(string address) {
-        int decimalAddress = stoi(address, 0, 16);
+        unsigned long decimalAddress = stoul(address, 0, 16);
 
         return decimalAddress >> (block_offset_bits + set_index_bits);
     }
 
     int getIndex(string address) {
-        int decimalAddress = stoi(address, 0, 16);
+        unsigned long decimalAddress = stoul(address, 0, 16);
 
         // Get rid of right most bits of decimalAddress
         decimalAddress = decimalAddress >> block_offset_bits;
@@ -113,7 +113,7 @@ class Cache {
     }
 
     int getOffset(string address) {
-        int decimalAddress = stoi(address, 0, 16);
+        unsigned long decimalAddress = stoul(address, 0, 16);
 
         // Create mask for block offset
         int mask = (1 << block_offset_bits) - 1;
@@ -186,23 +186,7 @@ class Cache {
         cout << "Total cycles: " << totalCycles << "\n";
     }
 
-    // bool inCache(string address) {
-    //     //go to spot in hashmap where the address should be
-    //     //check valid
-    //     //if not valid, not in cache
 
-    //     int index = getIndex(address); // key for map of sets
-    //     int tag = getTag(address); // key for map of slots
-    //     Slot addressSlot;
-    //     Set addressSet = sets.at(index);
-    //     if (addressSet.hasSlot(tag)) {
-    //         addressSlot = addressSet.getSlot(tag);
-    //     } else {
-    //         return false;
-    //     }
-    //     return addressSlot.isValid();
-
-    // }
         
 };
 #endif
