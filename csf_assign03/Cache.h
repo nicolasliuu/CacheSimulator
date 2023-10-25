@@ -92,65 +92,12 @@ class Cache {
     //put functions below
 
     int getTag(string address) {
-        //direct: 12 bits tag, 12 bits index, 8 bits offset
-        //associative: 24 bits tag, 8 bits offset
-        //set associative: 14 bits tag, 10 bits index, 8 bits offset
-
-        //direct
-            //get tag: bitwise shift right 20 bits
-            //get index: shift left 12 bits then shift right 20 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //associative
-            //get tag: bitwise shift right 8 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //set associative
-            //get tag: bitwise shift right 18 bits
-            //get index: shift left 14 bits then shift right 22 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //address comes in as a hex string representing a 32 bit int
-        //convert hex to decimal (did that in previous assignment)
-        //if statements for direct, associative, set associative
-
         int decimalAddress = stoi(address, 0, 16);
 
         return decimalAddress >> (block_offset_bits + set_index_bits);
-        
-        if(cacheSets == 1) { //associative
-            return decimalAddress >> 8;
-        }
-
-        if(numBlocks == 1) { //direct
-            return decimalAddress >> 20;
-        }
-
-        //set associative
-        return decimalAddress >> 18;
     }
 
     int getIndex(string address) {
-        //direct: 12 bits tag, 12 bits index, 8 bits offset
-        //associative: 24 bits tag, 8 bits offset
-        //set associative: 14 bits tag, 10 bits index, 8 bits offset
-
-        //direct
-            //get index: shift left 12 bits then shift right 20 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //associative
-            //get tag: bitwise shift right 8 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //set associative
-            //get index: shift left 14 bits then shift right 22 bits
-            //get offset(?): shift left 24 bits, then shift right 24 bits
-
-        //address comes in as a hex string representing a 32 bit int
-        //convert hex to decimal (did that in previous assignment)
-        //if statements for direct, associative, set associative
-
         int decimalAddress = stoi(address, 0, 16);
 
         // Get rid of right most bits of decimalAddress
@@ -160,16 +107,6 @@ class Cache {
 
         // Discard all bits other than index bits
         return decimalAddress & mask;
-
-
-        if(numBlocks == 1) { //direct
-            decimalAddress = decimalAddress << 12;
-            return decimalAddress >> 20;
-        }
-
-        //set associative
-        decimalAddress = decimalAddress << 14;
-        return decimalAddress >> 22;
     }
 
     int getOffset(string address) {
@@ -179,9 +116,6 @@ class Cache {
         int mask = (1 << block_offset_bits) - 1;
 
         return decimalAddress & mask;
-
-        decimalAddress = decimalAddress << 24;
-        return decimalAddress >> 24;
     }
 
     void incrementCounter() {
