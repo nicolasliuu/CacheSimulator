@@ -28,5 +28,9 @@ class Set {
             return slots.at(key);
         }
 
+        bool hasSlot(uint32_t tag) {
+            return slots.find(tag) != slots.end();
+        }
+
 };
 #endif  

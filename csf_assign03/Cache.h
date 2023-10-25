@@ -6,6 +6,7 @@
 #include <unordered_map>
 #include <cstdint>
 #include "Set.h"
+#include <cmath>
 using namespace std;
 
 class Cache {
@@ -23,7 +24,10 @@ class Cache {
         bool lru;
         bool fifo;
         uint64_t counter; //number of addresses read so far (regardless of l/s or fifo/lru), use this to set load_ts/access_ts
-        
+        int set_index_bits;
+        int block_offset_bits;
+        int tag_bits;        
+
         std::unordered_map<uint32_t, Set> sets;
 
         int totalLoads;
@@ -34,11 +38,13 @@ class Cache {
         int storeMisses;
         int totalCycles;
 
-
         Cache(int sets, int blocks, int size, string alloc, string writeThru, string lruOrFifo) {
             cacheSets = sets;
             numBlocks = blocks;
             blockSize = size;
+            set_index_bits = log(sets) / log(2);
+            block_offset_bits = log(size) / log(2);
+            tag_bits = 32 - (set_index_bits + block_offset_bits);
             writeAlloc = alloc;
             writeThru_back = writeThru;
             lru_fifo = lruOrFifo;
@@ -78,6 +84,9 @@ class Cache {
             cout << "writeBack: " << writeBack << "\n";
             cout << "lru: " << lru << "\n";
             cout << "fifo: " << fifo << "\n";
+            cout << "t" << tag_bits << "\n";
+            cout << "b" << block_offset_bits << "\n";
+            cout << "s" << set_index_bits << "\n";
         }
     
     //put functions below
@@ -106,6 +115,8 @@ class Cache {
         //if statements for direct, associative, set associative
 
         int decimalAddress = stoi(address, 0, 16);
+
+        return decimalAddress >> (block_offset_bits + set_index_bits);
         
         if(cacheSets == 1) { //associative
             return decimalAddress >> 8;
@@ -142,6 +153,14 @@ class Cache {
 
         int decimalAddress = stoi(address, 0, 16);
 
+        // Get rid of right most bits of decimalAddress
+        decimalAddress = decimalAddress >> block_offset_bits;
+        // Create a mask to isolate the set_index_bits
+        int mask = (1 << set_index_bits) - 1;
+
+        // Discard all bits other than index bits
+        return decimalAddress & mask;
+
 
         if(numBlocks == 1) { //direct
             decimalAddress = decimalAddress << 12;
@@ -168,6 +187,8 @@ class Cache {
         //dont actually load shit into the cpu, thats what the counter is for!!
 
         //check if address in cache
+        
+
         //address not in cache:
             //put address in cache, load to cpu
         //address in cache:
