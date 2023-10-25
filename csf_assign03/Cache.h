@@ -175,6 +175,11 @@ class Cache {
     int getOffset(string address) {
         int decimalAddress = stoi(address, 0, 16);
 
+        // Create mask for block offset
+        int mask = (1 << block_offset_bits) - 1;
+
+        return decimalAddress & mask;
+
         decimalAddress = decimalAddress << 24;
         return decimalAddress >> 24;
     }
