@@ -123,15 +123,46 @@ class Cache {
     }
 
     void loadAddress(string address) {
-        //dont actually load shit into the cpu, thats what the counter is for!!
+        // Get the index of the address and check the particular Set at that index, call hasAddress
+        int index = getIndex(address);
+        int tag = getTag(address);
 
-        //check if address in cache
-        
+        if (sets.at(index).hasSlot(tag)) {
+            Slot* slot = sets.at(index).getSlot(tag)
+        }
 
         //address not in cache:
-            //put address in cache, load to cpu
-        //address in cache:
-            //load to cpu
+        if (slot.isValid() && slot.getTag() == tag) {
+            // Increment load hits 
+            loadHits++;
+
+            // Update information for lru/fifo
+            if (lru) {
+
+            }
+
+            // Update cycle:
+            totalCycles++;          // Only loading to cache
+        }
+        else {
+            // Increment load misses
+            loadMisses++;   
+
+            // Change slot metadata
+            slot.setValid(true);
+            slot.setTag(getTag(address));
+
+            // Update information for lru/fifo
+            if (lru) {
+
+            }
+
+            // Update cycle:
+            // Loading from main memory + load to cache,
+            totalCycles += 101;
+        }
+        // Increment Total Loads
+        totalLoads++;
     }
 
     void storeAddress() {
@@ -146,8 +177,11 @@ class Cache {
         int index = getIndex(address); // key for map of sets
         int tag = getTag(address); // key for map of slots
         Set addressSet = sets.at(index);
-        Slot addressSlot = addressSet.getSlot(tag);
-
+        if (addressSet.hasSlot(tag)) {
+            Slot addressSlot = addressSet.getSlot(tag);
+        } else {
+            return false;
+        }
         return addressSlot.isValid();
 
     }

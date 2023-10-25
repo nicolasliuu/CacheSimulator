@@ -24,13 +24,14 @@ class Set {
 
     //put functions below (implement if the functions are small enough??)
     public:
-        Slot getSlot(uint32_t key) {
-            return slots.at(key);
+        Slot& getSlot(uint32_t tag) {
+            return slots.at(tag);
         }
 
         bool hasSlot(uint32_t tag) {
             return slots.find(tag) != slots.end();
         }
 
+        
 };
 #endif  

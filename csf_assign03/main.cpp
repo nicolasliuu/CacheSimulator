@@ -54,6 +54,15 @@ int main(int argc, char *argv[]) {
     // }
 
     Cache c(cacheSets, numBlocks, blockSize, writeAlloc, writeThru_back, lru_fifo);
+
+    // Process our input file
+    while (
+        
+    )
+
+
+
+    // Testing purposes
     c.printParameters();
     cout << "tag: " << c.getTag("23DC13AF") << "\n";
     cout << "index: " << c.getIndex("23DC13AF") << "\n";
