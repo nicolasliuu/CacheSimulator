@@ -94,29 +94,29 @@ class Cache {
             cout << "s" << set_index_bits << "\n";
         }
     
-    int getTag(string address) {
-        unsigned long decimalAddress = stoul(address, 0, 16);
+    uint32_t getTag(string address) {
+        uint32_t decimalAddress = stoul(address, 0, 16);
 
         return decimalAddress >> (block_offset_bits + set_index_bits);
     }
 
-    int getIndex(string address) {
-        unsigned long decimalAddress = stoul(address, 0, 16);
+   uint32_t getIndex(string address) {
+        uint32_t decimalAddress = stoul(address, 0, 16);
 
         // Get rid of right most bits of decimalAddress
         decimalAddress = decimalAddress >> block_offset_bits;
         // Create a mask to isolate the set_index_bits
-        int mask = (1 << set_index_bits) - 1;
+        uint32_t mask = (1 << set_index_bits) - 1;
 
         // Discard all bits other than index bits
         return decimalAddress & mask;
     }
 
-    int getOffset(string address) {
-        unsigned long decimalAddress = stoul(address, 0, 16);
+    uint32_t getOffset(string address) {
+        uint32_t decimalAddress = stoul(address, 0, 16);
 
         // Create mask for block offset
-        int mask = (1 << block_offset_bits) - 1;
+        uint32_t mask = (1 << block_offset_bits) - 1;
 
         return decimalAddress & mask;
     }
@@ -130,9 +130,9 @@ class Cache {
         uint32_t index = getIndex(address);
         uint32_t tag = getTag(address);
 
-        if (sets[index].hasSlot(tag)) {
+        if (sets.at(index).hasSlot(tag)) {
             // Cache hit
-            Slot& slot = sets[index].getSlot(tag);
+            Slot& slot = sets.at(index).getSlot(tag);
 
             if (slot.isValid() && slot.getTag() == tag) {
                 // Increment load hits 
@@ -145,14 +145,16 @@ class Cache {
 
                 // Update cycle:
                 totalCycles++;          // Only loading to cache
+            } else {
+                loadMisses++;           // Load miss
             }
         }
         else {
-            // Create a new slot
-            sets[index].addSlot(tag);
-            Slot& slot = sets[index].getSlot(tag);
+            // Set the tag for the slot
+            sets.at(index).updateSlot(tag);
+            Slot& slot = sets.at(index).getSlot(tag);
             
-            // Increment load misses
+            // Cache miss
             loadMisses++;   
 
             // Change slot metadata
