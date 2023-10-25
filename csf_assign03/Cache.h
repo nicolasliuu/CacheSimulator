@@ -173,20 +173,33 @@ class Cache {
     }
 
     void storeAddress(string address) {
+        //hit
+            //if write thru is true
 
+            //if write back is true
+
+        //miss
+            //if write allocate is true
+
+            //if no write allocate is true
     }
 
-    void printStatistics() {
-        cout << "Total loads: " << totalLoads << "\n";
-        cout << "Total stores: " << totalStores << "\n";
-        cout << "Load hits: " << loadHits << "\n";
-        cout << "Load misses: " << loadMisses << "\n";
-        cout << "Store hits: " << storeHits << "\n";
-        cout << "Store misses: " << storeMisses << "\n";
-        cout << "Total cycles: " << totalCycles << "\n";
+    bool inCache(string address) {
+        //go to spot in hashmap where the address should be
+        //check valid
+        //if not valid, not in cache
+
+        int index = getIndex(address); // key for map of sets
+        int tag = getTag(address); // key for map of slots
+        Set addressSet = sets.at(index);
+        if (addressSet.hasSlot(tag)) {
+            Slot addressSlot = addressSet.getSlot(tag);
+        } else {
+            return false;
+        }
+        return addressSlot.isValid();
+
     }
-
-
         
 };
 #endif
