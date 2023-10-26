@@ -40,40 +40,11 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    // cout << "number of sets in the cache: " << cacheSets << "\n";
-    // cout << "number of blocks in each set: " << numBlocks << "\n";
-    // cout << "number of bytes in each block: " << blockSize << "\n";
-    // cout << "write-allocate or no-write-allocate: " << writeAlloc << "\n";
-    // cout << "write-through or write-back: " << writeThru_back << "\n";
-    // cout << "lru (least-recently-used) or fifo evictions: " << lru_fifo << "\n";
-
-
-    // while (getline(std::cin, line)) {
-    //     cin >> loadStore >> address;
-    //     cout << "load or store: " << loadStore << "\n";
-    //     cout << "address: " << address << "\n";
-        
-    // }
-
     Cache c(cacheSets, numBlocks, blockSize, writeAlloc, writeThru_back, lru_fifo);
 
     string line; //holds current line in trace file
     string loadStore; //l or s
     string address; //address
-
-    // // Process our input file
-    // while (cin >> loadStore >> address) {
-    //     if (loadStore == "l") {
-    //         c.loadAddress(address);
-    //         // cout << "load\n";
-    //     } else if (loadStore == "s") {
-    //         c.storeAddress(address);
-    //         // cout << "store\n";
-    //     } else {
-    //         fprintf(stderr, "Error: loadStore is not l or s\n");
-    //         return 1;
-    //     }
-    // }
 
     while (getline(cin, line)) {
         if (line.empty()) {

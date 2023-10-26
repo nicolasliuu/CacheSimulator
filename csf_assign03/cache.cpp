@@ -127,7 +127,7 @@ void Cache::loadAddress(string address) {
 
         // Update cycle:
         // Loading from main memory + load to cache,
-        totalCycles += 101;
+        totalCycles += 100 * (blockSize / 4);
     }
     // Increment Total Loads
     totalLoads++;
