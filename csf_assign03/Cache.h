@@ -212,11 +212,12 @@ class Cache {
             if(writeAllocate) {
                 if(sets[index].isFull()) { //need to evict
                     if(lru) {
-                        //iterate thru set hashmap and see which block has lowest access_ts
+                        //find slot with biggest access_ts
+                        //
                     }
                 }
 
-                sets[index].addSlot(tag);
+                sets[index].updateSlot(tag);
                 if(writeBack) {
                     sets[index].getSlot(tag)->setDirty(true);
                 }
