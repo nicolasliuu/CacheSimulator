@@ -126,7 +126,7 @@ class Cache {
     }
 
     void loadAddress(string address) {
-        // Get the index of the address and check the particular Set at that index, call hasAddress
+        // Get the index of the address and check the particular Set at that index, call hasSlot
         uint32_t index = getIndex(address);
         uint32_t tag = getTag(address);
 
