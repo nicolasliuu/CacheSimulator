@@ -3,6 +3,9 @@
 #include <sstream>
 #include <string>
 #include "Cache.h"
+#include "cache.cpp"
+#include "set.cpp"
+#include "Set.h"
 using namespace std;
 
 int main(int argc, char *argv[]) {
