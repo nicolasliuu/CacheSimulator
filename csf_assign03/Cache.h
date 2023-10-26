@@ -132,9 +132,9 @@ class Cache {
 
         if (sets.at(index).hasSlot(tag)) {
             // Cache hit
-            Slot& slot = sets.at(index).getSlot(tag);
+            Slot* slot = sets.at(index).getSlot(tag);
 
-            if (slot.isValid() && slot.getTag() == tag) {
+            if (slot->isValid() && slot->getTag() == tag) {
                 // Increment load hits 
                 loadHits++;
 
@@ -151,15 +151,15 @@ class Cache {
         }
         else {
             // Set the tag for the slot
-            sets.at(index).updateSlot(tag);
-            Slot& slot = sets.at(index).getSlot(tag);
+            sets.at(index).addSlot(tag);
+            Slot* slot = sets.at(index).getSlot(tag);
             
             // Cache miss
             loadMisses++;   
 
             // Change slot metadata
-            slot.setValid(true);
-            slot.setTag(tag);
+            slot->setValid(true);
+            slot->setTag(tag);
 
             // Update information for lru/fifo
             if (lru) {
@@ -196,7 +196,7 @@ class Cache {
         int tag = getTag(address); // key for map of slots
 
         if(sets[index].hasSlot(tag)) { //hit
-            Slot& slot = sets[index].getSlot(tag);
+            Slot* slot = sets[index].getSlot(tag);
             storeHits++;
             
 
@@ -205,7 +205,7 @@ class Cache {
             } 
 
             if(writeBack) { //write to cache only and write to memory when block is evicted
-                slot.setDirty(true);
+                slot->setDirty(true);
                 totalCycles++;
             }
         } else { //miss
@@ -218,11 +218,11 @@ class Cache {
 
                 sets[index].addSlot(tag);
                 if(writeBack) {
-                    sets[index].getSlot(tag).setDirty(true);
+                    sets[index].getSlot(tag)->setDirty(true);
                 }
 
                 if(lru) {
-                    sets[index].getSlot(tag).setAccess_ts(counter);
+                    sets[index].getSlot(tag)->setAccess_ts(counter);
                 }
                 totalCycles++;
             }
@@ -242,7 +242,7 @@ class Cache {
         int tag = getTag(address); // key for map of slots
         Set addressSet = sets.at(index);
         if (addressSet.hasSlot(tag)) {
-            Slot addressSlot = addressSet.getSlot(tag);
+            Slot* addressSlot = addressSet.getSlot(tag);
         } else {
             return false;
         }

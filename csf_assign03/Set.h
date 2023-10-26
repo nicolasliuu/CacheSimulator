@@ -11,7 +11,6 @@
 
 class Set {
     private: 
-        // std::unordered_map<uint32_t, Slot> slots;//easier if this were a vector T-T
         std::vector<Slot> slots;//indices aren't associated with tags
         int maxBlocks;
         int currBlocks;
@@ -23,47 +22,38 @@ class Set {
         Set(int numBlocks) { 
             maxBlocks = numBlocks;
             currBlocks = 0;
-            // Initialize the slots
-            for (int i = 0; i < numBlocks; ++i) {
-                slots[i] = Slot();
-            }
+            // // Initialize the slots
+            // for (int i = 0; i < numBlocks; ++i) {
+            //     slots[i] = Slot();
+            // }
         }
 
-        Slot& getSlot(uint32_t tag) {
+        Slot* getSlot(uint32_t tag) {
             // return slots[tag];
             for(int i = 0; i < slots.size(); i++) {
-                if (slots[i].getTag() == tag) {
-                    return slots[i];
+                if (slots[i].getTag() == tag && slots[i].isValid()) {
+                    return &slots[i];
                 }
             }
+            return nullptr;
         }
 
-        void updateSlot(uint32_t tag) {
-            // Check if the set is full
+        void addSlot(uint32_t tag) {
+            // Check if the set is full, if yes we need to evict, otherwise just add the new slot
             if (currBlocks == maxBlocks) {
                 // LRU
 
 
                 // FIFO
             } else {
-                // // Find slot with tag 0, then add the tag
-                //     for (auto& slotPair : slots) {
-                //         Slot& slot = slotPair.second;
-
-                //         if (!slot.isValid()) {
-                //             // We found an invalid slot, so use this one.
-                //             slot.setTag(tag);
-                //             slot.setValid(true);
-
-                //             // Update slot timestamps
-
-                //             return;
-                //         }
-                //     }
+                // Find a slot that's not valid
+                slots.emplace_back(); // Create a new slot at the end of the vector.
+                Slot& newSlot = slots.back(); // Reference to the newly created slot.
+                newSlot.setTag(tag);
+                newSlot.setValid(true);
+                currBlocks++;
             }
-            slots[tag] = Slot();
-            slots[tag].setTag(tag);
-            slots[tag].setValid(true);
+            return;
         }
 
         bool hasSlot(uint32_t tag) {
