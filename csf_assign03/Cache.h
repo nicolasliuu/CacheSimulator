@@ -217,7 +217,7 @@ class Cache {
                     }
                 }
 
-                sets[index].updateSlot(tag);
+                sets[index].addSlot(tag);
                 if(writeBack) {
                     sets[index].getSlot(tag)->setDirty(true);
                 }

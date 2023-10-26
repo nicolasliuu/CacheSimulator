@@ -29,6 +29,10 @@ class Slot {
             return access_ts;
         }
 
+        void increaseAccess_ts() {
+            access_ts++;
+        }
+
         bool isValid() {
             return valid;
         }
