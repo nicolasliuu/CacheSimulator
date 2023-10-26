@@ -127,7 +127,7 @@ void Cache::loadAddress(string address) {
 
         // Update cycle:
         // Loading from main memory + load to cache,
-        totalCycles += 100 * (blockSize / 4);
+        totalCycles += (100 * (4 / 4));
     }
     // Increment Total Loads
     totalLoads++;
@@ -158,16 +158,24 @@ void Cache::storeAddress(string address) {
         Slot* slot = sets[index].getSlot(tag);
         storeHits++;
         
-
-        if(writeThru) { //write to cache and memory
-            totalCycles += 100 * (blockSize / 4);
-            totalCycles++;
-        } 
-
-        if(writeBack) { //write to cache only and write to memory when block is evicted
+        if (writeBack) {
             slot->setDirty(true);
             totalCycles++;
+        } else { // writeThru
+            totalCycles += (100 * (4 / 4));
+            totalCycles++;
         }
+
+        // if(writeThru) { //write to cache and memory
+        //     totalCycles += (100 * (blockSize / 4));
+        //     totalCycles++;
+        //     // cout << "wrotethru" << endl;
+        // } 
+
+        // if(writeBack) { //write to cache only and write to memory when block is evicted
+        //     slot->setDirty(true);
+        //     totalCycles++;
+        // }
     } else { //miss
         storeMisses++;
 
@@ -185,7 +193,7 @@ void Cache::storeAddress(string address) {
         }
 
         if(noWriteAllocate) {
-            totalCycles += 100 * (blockSize / 4);
+            totalCycles += (100 * (4 / 4));
         }
         
     }

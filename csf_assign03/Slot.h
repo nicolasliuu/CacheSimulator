@@ -6,8 +6,8 @@
 
 class Slot {
     private:
-        uint32_t tag;
-        bool valid;
+        uint32_t tag = 0;
+        bool valid = false;
         uint32_t load_ts;//fifo
         uint32_t access_ts;//lru
         bool dirty;
