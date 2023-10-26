@@ -160,7 +160,8 @@ void Cache::storeAddress(string address) {
         
 
         if(writeThru) { //write to cache and memory
-            totalCycles += 101;
+            totalCycles += 100 * (blockSize / 4);
+            totalCycles++;
         } 
 
         if(writeBack) { //write to cache only and write to memory when block is evicted
@@ -184,7 +185,7 @@ void Cache::storeAddress(string address) {
         }
 
         if(noWriteAllocate) {
-            totalCycles += 100;
+            totalCycles += 100 * (blockSize / 4);
         }
         
     }
