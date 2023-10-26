@@ -209,6 +209,8 @@ class Cache {
                 totalCycles++;
             }
         } else { //miss
+            storeMisses++;
+
             if(writeAllocate) {
 
                 sets[index].addSlot(tag);
@@ -225,7 +227,9 @@ class Cache {
             if(noWriteAllocate) {
                 totalCycles += 100;
             }
+            
         }
+        totalStores++;
     }
 
     bool inCache(string address) {
