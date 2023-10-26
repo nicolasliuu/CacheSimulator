@@ -22,7 +22,7 @@ class Set {
         Set(int numBlocks) { 
             maxBlocks = numBlocks;
             currBlocks = 0;
-            // // Initialize the slots
+            // Initialize the slots
             // for (int i = 0; i < numBlocks; ++i) {
             //     slots[i] = Slot();
             // }
