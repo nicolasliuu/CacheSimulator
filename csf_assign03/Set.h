@@ -97,6 +97,10 @@ class Set {
             return currBlocks == maxBlocks;
         }
 
+        int getCurrBlocks() {
+            return currBlocks;
+        }
+
         
 };
 #endif  

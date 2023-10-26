@@ -210,21 +210,15 @@ class Cache {
             }
         } else { //miss
             if(writeAllocate) {
-                if(sets[index].isFull()) { //need to evict
-                    if(lru) {
-                        //find slot with biggest access_ts
-                        //
-                    }
-                }
 
                 sets[index].addSlot(tag);
                 if(writeBack) {
                     sets[index].getSlot(tag)->setDirty(true);
                 }
 
-                if(lru) {
-                    sets[index].getSlot(tag)->setAccess_ts(counter);
-                }
+                // if(lru) {
+                //     sets[index].getSlot(tag)->setAccess_ts(counter);
+                // }
                 totalCycles++;
             }
 
