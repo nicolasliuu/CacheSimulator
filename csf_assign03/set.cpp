@@ -38,10 +38,11 @@ Slot* Set::getSlot(uint32_t tag) {
     return nullptr;
 }
 
-void Set::addSlot(uint32_t tag) {
+bool Set::addSlot(uint32_t tag) {//returns true if block evicted
     // Check if the set is full, if yes we need to evict, otherwise just add the new slot
     if (currBlocks == maxBlocks) {
         // LRU
+
         int highestCounterIndex = 0;
         for (int i = 1; i < slots.size(); ++i) {
             if (slots[i].getAccess_ts() > slots[highestCounterIndex].getAccess_ts()) {
@@ -60,6 +61,8 @@ void Set::addSlot(uint32_t tag) {
             }
         }
 
+        return true;
+
         // FIFO
     } else {
         // Set not full, make new slot and adjust counters as necessary
@@ -75,8 +78,9 @@ void Set::addSlot(uint32_t tag) {
         for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
             slots[i].increaseAccess_ts();
         }
+
+        return false;
     }
-    return;
 }
 
 bool Set::hasSlot(uint32_t tag) {

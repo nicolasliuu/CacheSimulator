@@ -5,6 +5,7 @@
 #include "Set.h"
 #include "Cache.h"
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 Cache::Cache(int num_sets, int blocks, int size, std::string alloc, std::string writeThru, std::string lruOrFifo) {      
@@ -94,12 +95,12 @@ void Cache::incrementCounter() {
     counter++;
 }
 
-void Cache::loadAddress(string address) {
+void Cache::loadAddress(string address) { 
     // Get the index of the address and check the particular Set at that index, call hasSlot
     uint32_t index = getIndex(address);
     uint32_t tag = getTag(address);
 
-    if (sets.at(index).hasSlot(tag)) {
+    if (sets.at(index).hasSlot(tag)) { //hit
         // Cache hit, update according to lru/fifo
         Slot* slot = sets.at(index).getSlot(tag);
 
@@ -108,9 +109,13 @@ void Cache::loadAddress(string address) {
         // Only loading to cache so increase totalCycles by 1
         totalCycles++;         
     }
-    else {
+    else { //miss
         // Set the tag for the slot
-        sets.at(index).addSlot(tag);
+        bool evicted = sets.at(index).addSlot(tag);
+        if(evicted) {
+            totalCycles += (100 * (blockSize / 4));
+        }
+
         Slot* slot = sets.at(index).getSlot(tag);
         
         // Cache miss
@@ -127,7 +132,8 @@ void Cache::loadAddress(string address) {
 
         // Update cycle:
         // Loading from main memory + load to cache,
-        totalCycles += (100 * (4 / 4));
+        totalCycles += (100 * (blockSize / 4));
+        totalCycles++;
     }
     // Increment Total Loads
     totalLoads++;
@@ -162,7 +168,7 @@ void Cache::storeAddress(string address) {
             slot->setDirty(true);
             totalCycles++;
         } else { // writeThru
-            totalCycles += (100 * (4 / 4));
+            totalCycles += (100 * (blockSize / 4));
             totalCycles++;
         }
 
@@ -181,7 +187,11 @@ void Cache::storeAddress(string address) {
 
         if(writeAllocate) {
 
-            sets[index].addSlot(tag);
+            bool evicted = sets[index].addSlot(tag);
+            if(evicted) {
+                totalCycles += (100 * (blockSize / 4));
+            }
+
             if(writeBack) {
                 sets[index].getSlot(tag)->setDirty(true);
             }
@@ -190,10 +200,11 @@ void Cache::storeAddress(string address) {
             //     sets[index].getSlot(tag)->setAccess_ts(counter);
             // }
             totalCycles++;
+            totalCycles += (100 * (blockSize / 4));
         }
 
         if(noWriteAllocate) {
-            totalCycles += (100 * (4 / 4));
+            totalCycles += 100;//(100 * (blockSize / 4));
         }
         
     }
