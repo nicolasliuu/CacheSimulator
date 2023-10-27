@@ -111,7 +111,7 @@ void Cache::loadAddress(string address) {
     }
     else { //miss
         // Set the tag for the slot
-        bool evicted = sets.at(index).addSlot(tag);
+        bool evicted = sets.at(index).addSlot(tag, lru, fifo);
         if(evicted) {
             totalCycles += (100 * (blockSize / 4));
         }
@@ -187,7 +187,7 @@ void Cache::storeAddress(string address) {
 
         if(writeAllocate) {
 
-            bool evicted = sets[index].addSlot(tag);
+            bool evicted = sets[index].addSlot(tag, lru, fifo);
             if(evicted) {
                 totalCycles += (100 * (blockSize / 4));
             }

@@ -24,7 +24,7 @@ public:
     Set(int numBlocks); // Constructor with size parameter
 
     Slot* getSlot(uint32_t tag); // Retrieve a pointer to a slot based on the tag
-    bool addSlot(uint32_t tag); // Add a slot with the provided tag
+    bool addSlot(uint32_t tag, bool lru, bool fifo); // Add a slot with the provided tag
     bool hasSlot(uint32_t tag); // Check if a slot with the specific tag exists
     bool isFull(); // Check if the set is full
 
