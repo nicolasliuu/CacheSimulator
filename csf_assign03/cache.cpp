@@ -98,15 +98,14 @@ void Cache::loadAddress(string address) {
     uint32_t tag = getTag(address);
 
     if (sets.at(index).hasSlot(tag)) { //hit
-        // Cache hit, update according to lru/fifo
-        Slot* slot = sets.at(index).getSlot(tag, globalCounter);
-
         loadHits++;
-
+        // Cache hit, update according to lru/fifo
+        Slot* slot = sets.at(index).getSlot(tag, globalCounter); // Update access time to globalCounter
         // Only loading to cache so increase totalCycles by 1
         totalCycles++;         
     }
     else { //miss
+        loadMisses++;
         // Set the tag for the slot
         bool evicted = sets.at(index).addSlot(tag, lru, fifo);
         if(evicted) {
@@ -115,8 +114,7 @@ void Cache::loadAddress(string address) {
 
         Slot* slot = sets.at(index).getSlot(tag, globalCounter);
         
-        // Cache miss
-        loadMisses++;   
+
 
         // Change slot metadata
         slot->setValid(true);
@@ -134,6 +132,8 @@ void Cache::loadAddress(string address) {
     }
     // Increment Total Loads
     totalLoads++;
+    // Increment globalCounter
+    globalCounter++;
 }
 
 void Cache::storeAddress(string address) {
@@ -206,13 +206,15 @@ void Cache::storeAddress(string address) {
         
     }
     totalStores++;
+    // Increment globalCounter
+    globalCounter++;
 }
 
 void Cache::incrementGlobalCounter() {
     globalCounter++;
 }
 
-uint64_t Cache::getGlobalCounter() const {
+uint64_t Cache::getGlobalCounter() {
     return globalCounter;
 }
 

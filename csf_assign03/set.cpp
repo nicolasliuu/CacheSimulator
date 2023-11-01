@@ -38,10 +38,10 @@ Set::Set(int numBlocks) {
 //     return nullptr;
 // }
 
-Slot* Set::getSlot(uint32_t tag, uint64_t& globalCounter) {
+Slot* Set::getSlot(uint32_t tag, uint64_t globalCounter) {
     for(int i = 0; i < slots.size(); i++) {
         if (slots[i].getTag() == tag && slots[i].isValid()) {
-            slots[i].access_ts = globalCounter++;  // Update last accessed timestamp.
+            slots[i].setAccess_ts(globalCounter);  // Update last accessed timestamp.
             return &slots[i];
         }
     }

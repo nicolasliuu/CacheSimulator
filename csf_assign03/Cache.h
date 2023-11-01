@@ -46,7 +46,7 @@ public:
     void storeAddress(std::string address);
     void printStatistics();
     void incrementGlobalCounter();
-    uint64_t getGlobalCounter() const;
+    uint64_t getGlobalCounter();
 };
 
 #endif  // _CACHE_H
