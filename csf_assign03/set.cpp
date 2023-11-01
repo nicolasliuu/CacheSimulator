@@ -49,7 +49,7 @@ Slot* Set::getSlot(uint32_t tag, uint64_t globalCounter) {
 }
 
 
-bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block evicted
+bool Set::addSlot(uint32_t tag, bool lru, bool fifo, uint64_t globalCounter) {//returns true if block evicted
     // Check if the set is full, if yes we need to evict, otherwise just add the new slot
     if (currBlocks == maxBlocks) {
         // LRU
@@ -63,7 +63,7 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block ev
 
             slots[lowestCounterIndex].setTag(tag);
             slots[lowestCounterIndex].setValid(true);
-            slots[lowestCounterIndex].setAccess_ts(0);  // Resetting counter
+            slots[lowestCounterIndex].setAccess_ts(globalCounter);  // Resetting counter
 
             // Increment the counters for all other slots to signify they've aged by one cycle.
             // for (int i = 0; i < slots.size(); ++i) {
@@ -96,15 +96,15 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block ev
             Slot newSlot;
             newSlot.setTag(tag);
             newSlot.setValid(true);
-            newSlot.setAccess_ts(0);  // This is the most recently used entry.
+            newSlot.setAccess_ts(globalCounter);  // This is the most recently used entry.
 
             slots.push_back(newSlot);
             currBlocks++;
 
             // // As before, we increment the counters for all other entries.
-            // for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
-            //     slots[i].increaseAccess_ts();
-            // }
+            // // for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
+            // //     slots[i].increaseAccess_ts();
+            // // }
         } else if(fifo) {
             //increment load_ts in every block
             //insert new block with load_ts = 0
