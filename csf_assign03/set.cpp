@@ -54,23 +54,23 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block ev
     if (currBlocks == maxBlocks) {
         // LRU
         if(lru) {
-            int highestCounterIndex = 0;
+            int lowestCounterIndex = 0;
             for (int i = 1; i < slots.size(); ++i) {
-                if (slots[i].getAccess_ts() > slots[highestCounterIndex].getAccess_ts()) {
-                    highestCounterIndex = i;
+                if (slots[i].getAccess_ts() < slots[lowestCounterIndex].getAccess_ts()) {
+                    lowestCounterIndex = i;
                 }
             }
 
-            slots[highestCounterIndex].setTag(tag);
-            slots[highestCounterIndex].setValid(true);
-            slots[highestCounterIndex].setAccess_ts(0);  // Resetting counter
+            slots[lowestCounterIndex].setTag(tag);
+            slots[lowestCounterIndex].setValid(true);
+            slots[lowestCounterIndex].setAccess_ts(0);  // Resetting counter
 
             // Increment the counters for all other slots to signify they've aged by one cycle.
-            for (int i = 0; i < slots.size(); ++i) {
-                if (i != highestCounterIndex) {  // All slots except the one we've just accessed.
-                    slots[i].increaseAccess_ts(); 
-                }
-            }            
+            // for (int i = 0; i < slots.size(); ++i) {
+            //     if (i != lowestCounterIndex) {  // All slots except the one we've just accessed.
+            //         slots[i].increaseAccess_ts(); 
+            //     }
+            // }            
         }else if(fifo) {
             //increment load_ts in every block
             //find highest load_ts
@@ -79,16 +79,16 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block ev
                 slots[i].increaseLoad_ts();
             }
 
-            int highestCounterIndex = 0;
+            int lowestCounterIndex = 0;
             for (int i = 1; i < slots.size(); ++i) {
-                if (slots[i].getLoad_ts() > slots[highestCounterIndex].getLoad_ts()) {
-                    highestCounterIndex = i;
+                if (slots[i].getLoad_ts() > slots[lowestCounterIndex].getLoad_ts()) {
+                    lowestCounterIndex = i;
                 }
             }
 
-            slots[highestCounterIndex].setLoad_ts(0);
-            slots[highestCounterIndex].setValid(true);
-            slots[highestCounterIndex].setTag(tag);
+            slots[lowestCounterIndex].setLoad_ts(0);
+            slots[lowestCounterIndex].setValid(true);
+            slots[lowestCounterIndex].setTag(tag);
         }
         return true;
     } else { // Set not full, make new slot and adjust counters as necessary
