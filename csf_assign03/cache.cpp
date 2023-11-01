@@ -168,7 +168,7 @@ void Cache::storeAddress(string address) {
             slot->setDirty(true);
             totalCycles++;
         } else { // writeThru
-            totalCycles += (100 * (blockSize / 4));
+            totalCycles += 100;      // (100 * (blockSize / 4));
             totalCycles++;
         }
 
