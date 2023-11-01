@@ -101,10 +101,10 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo) {//returns true if block ev
             slots.push_back(newSlot);
             currBlocks++;
 
-            // As before, we increment the counters for all other entries.
-            for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
-                slots[i].increaseAccess_ts();
-            }
+            // // As before, we increment the counters for all other entries.
+            // for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
+            //     slots[i].increaseAccess_ts();
+            // }
         } else if(fifo) {
             //increment load_ts in every block
             //insert new block with load_ts = 0

@@ -114,16 +114,9 @@ void Cache::loadAddress(string address) {
 
         Slot* slot = sets.at(index).getSlot(tag, globalCounter);
         
-
-
         // Change slot metadata
         slot->setValid(true);
         slot->setTag(tag);
-
-        // Update information for lru/fifo
-        if (lru) {
-            // nothing for now, just testing counts
-        }
 
         // Update cycle:
         // Loading from main memory + load to cache,
@@ -201,7 +194,8 @@ void Cache::storeAddress(string address) {
         }
 
         if(noWriteAllocate) {
-            totalCycles += 100;//(100 * (blockSize / 4));
+            // totalCycles += 100;//(100 * (blockSize / 4));
+            totalCycles++;
         }
         
     }
