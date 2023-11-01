@@ -18,6 +18,7 @@ Cache::Cache(int num_sets, int blocks, int size, std::string alloc, std::string 
     writeAlloc = alloc;
     writeThru_back = writeThru;
     lru_fifo = lruOrFifo;
+    globalCounter = 0;
 
     // Create the cache sets
     for (int i = 0; i < cacheSets; ++i) {
@@ -91,10 +92,6 @@ uint32_t Cache::getOffset(string address) {
     return decimalAddress & mask;
 }
 
-void Cache::incrementCounter() {
-    counter++;
-}
-
 void Cache::loadAddress(string address) { 
     // Get the index of the address and check the particular Set at that index, call hasSlot
     uint32_t index = getIndex(address);
@@ -102,7 +99,7 @@ void Cache::loadAddress(string address) {
 
     if (sets.at(index).hasSlot(tag)) { //hit
         // Cache hit, update according to lru/fifo
-        Slot* slot = sets.at(index).getSlot(tag);
+        Slot* slot = sets.at(index).getSlot(tag, globalCounter);
 
         loadHits++;
 
@@ -116,7 +113,7 @@ void Cache::loadAddress(string address) {
             totalCycles += (100 * (blockSize / 4));
         }
 
-        Slot* slot = sets.at(index).getSlot(tag);
+        Slot* slot = sets.at(index).getSlot(tag, globalCounter);
         
         // Cache miss
         loadMisses++;   
@@ -161,7 +158,7 @@ void Cache::storeAddress(string address) {
     int tag = getTag(address); // key for map of slots
 
     if(sets[index].hasSlot(tag)) { //hit
-        Slot* slot = sets[index].getSlot(tag);
+        Slot* slot = sets[index].getSlot(tag, globalCounter);
         storeHits++;
         
         if (writeBack) {
@@ -193,7 +190,7 @@ void Cache::storeAddress(string address) {
             }
 
             if(writeBack) {
-                sets[index].getSlot(tag)->setDirty(true);
+                sets[index].getSlot(tag, globalCounter)->setDirty(true);
             }
 
             // if(lru) {
@@ -211,21 +208,12 @@ void Cache::storeAddress(string address) {
     totalStores++;
 }
 
-bool Cache::inCache(string address) {
-    //go to spot in hashmap where the address should be
-    //check valid
-    //if not valid, not in cache
+void Cache::incrementGlobalCounter() {
+    globalCounter++;
+}
 
-    int index = getIndex(address); // key for map of sets
-    int tag = getTag(address); // key for map of slots
-    Set addressSet = sets.at(index);
-    if (addressSet.hasSlot(tag)) {
-        Slot* addressSlot = addressSet.getSlot(tag);
-    } else {
-        return false;
-    }
-    // return addressSlot.isValid();
-
+uint64_t Cache::getGlobalCounter() const {
+    return globalCounter;
 }
 
 void Cache::printStatistics() {

@@ -21,11 +21,11 @@ private:
     bool writeBack;
     bool lru;
     bool fifo;
-    uint64_t counter;
     int set_index_bits;
     int block_offset_bits;
     int tag_bits;
     std::unordered_map<uint32_t, Set> sets;
+    uint64_t globalCounter = 0;
     int totalLoads = 0;
     int totalStores = 0;
     int loadHits = 0;
@@ -41,11 +41,12 @@ public:
     uint32_t getTag(std::string address);
     uint32_t getIndex(std::string address);
     uint32_t getOffset(std::string address);
-    void incrementCounter();
+    // void incrementCounter();
     void loadAddress(std::string address);
     void storeAddress(std::string address);
-    bool inCache(std::string address);
     void printStatistics();
+    void incrementGlobalCounter();
+    uint64_t getGlobalCounter() const;
 };
 
 #endif  // _CACHE_H
