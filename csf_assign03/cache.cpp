@@ -1,3 +1,4 @@
+
 #include <cstdlib>
 #include <string>
 #include <unordered_map>
@@ -108,21 +109,18 @@ void Cache::loadAddress(string address) {
         loadMisses++;
         // Set the tag for the slot
         bool evicted = sets.at(index).addSlot(tag, lru, fifo, globalCounter);
-        if(evicted && writeBack) {
+        Slot* slot = sets.at(index).getSlot(tag, globalCounter);
+
+        // Check if we just evicted a dirty bit with the writeback policy
+        if (writeBack && evicted && slot->isDirty()) {
             totalCycles += (100 * (blockSize / 4));
-        } else {
-            // Update cycle:
-            // Loading from main memory + load to cache,
-            totalCycles += (100 * (blockSize / 4));
-            totalCycles++;
+            slot->setDirty(false);
         }
 
-        Slot* slot = sets.at(index).getSlot(tag, globalCounter);
-        
-        // Change slot metadata
-        slot->setValid(true);
-        slot->setTag(tag);
-
+        // Update cycle:
+        // Loading from main memory + load to cache,
+        totalCycles += (100 * (blockSize / 4));
+        totalCycles++;
     }
     // Increment Total Loads
     totalLoads++;
@@ -131,23 +129,6 @@ void Cache::loadAddress(string address) {
 }
 
 void Cache::storeAddress(string address) {
-    //hit
-        //if write thru is true
-            //increase storeHits, totalStores
-            //totalCycles += 101
-
-        //if write back is true
-            //set dirty = true
-            //totalCycles++
-
-    //miss
-        //if write allocate is true
-            //put address in cache
-            //totalCycles++
-
-        //if no write allocate is true
-            //totalCycles += 100
-
     int index = getIndex(address); // key for map of sets
     int tag = getTag(address); // key for map of slots
 
@@ -159,42 +140,29 @@ void Cache::storeAddress(string address) {
             slot->setDirty(true);
             totalCycles++;
         } else { // writeThru
-            totalCycles += (100 * (blockSize / 4)); //conceptually +100 is not correct, either add 1 or 100 * (n/4)
-            // totalCycles++;
+            totalCycles += 100; // We are only writing a 4-byte value   // (100 * (blockSize / 4));
+            totalCycles++;
         }
-
-        // if(writeThru) { //write to cache and memory
-        //     totalCycles += (100 * (blockSize / 4));
-        //     totalCycles++;
-        //     // cout << "wrotethru" << endl;
-        // } 
-
-        // if(writeBack) { //write to cache only and write to memory when block is evicted
-        //     slot->setDirty(true);
-        //     totalCycles++;
-        // }
     } else { //miss
         storeMisses++;
 
         if(writeAllocate) {
 
             bool evicted = sets[index].addSlot(tag, lru, fifo, globalCounter);
-            if(evicted && writeBack) {
+            Slot* slot = sets[index].getSlot(tag, globalCounter);
+
+            if(evicted && slot->isDirty()) {
                 totalCycles += (100 * (blockSize / 4));
-            }
-
-            if(!evicted && writeBack) {
-                sets[index].getSlot(tag, globalCounter)->setDirty(true);
+                slot->setDirty(false);
+            } else {
                 totalCycles++;
             }
 
-            if(!evicted && writeThru) {
-                totalCycles++;
-                totalCycles += (100 * (blockSize / 4));                
-            }
-        } else {
-            totalCycles += (100 * (blockSize / 4));
-            // totalCycles++;
+            totalCycles += 100 * (blockSize / 4);
+        }
+
+        if(noWriteAllocate) {
+            totalCycles += 100;
         }
         
     }

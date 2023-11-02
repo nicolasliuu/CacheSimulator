@@ -32,7 +32,6 @@ private:
     int loadMisses = 0;
     int storeHits = 0;
     int storeMisses = 0;
-    int totalCycles = 0;
 
 
 public:
@@ -47,6 +46,7 @@ public:
     void printStatistics();
     void incrementGlobalCounter();
     uint64_t getGlobalCounter();
+    int totalCycles = 0;
 };
 
 #endif  // _CACHE_H

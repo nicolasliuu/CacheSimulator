@@ -10,7 +10,7 @@ class Slot {
         bool valid = false;
         uint32_t load_ts;//fifo
         uint32_t access_ts;//lru
-        bool dirty;
+        bool dirty = false;
 
     //put functions below (implement if the functions are small enough??)
 

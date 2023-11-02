@@ -66,12 +66,6 @@ int main(int argc, char *argv[]) {
         }
     }
 
-
-    // Testing purposes
-    // c.printParameters();
-    // cout << "tag: " << c.getTag("23DC13AF") << "\n";
-    // cout << "index: " << c.getIndex("23DC13AF") << "\n";
-
     c.printStatistics();
 
     return 0;

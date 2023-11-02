@@ -15,29 +15,6 @@ Set::Set(int numBlocks) {
     currBlocks = 0;
 }
 
-// Slot* Set::getSlot(uint32_t tag) {
-//     // return slots[tag];
-//     for(int i = 0; i < slots.size(); i++) {
-//         if (slots[i].getTag() == tag && slots[i].isValid()) {
-//             // We have a hit, update according to lru/fifo (LRU for MS2)
-//             // Check if timestamp is highest
-//             int slot_ts = slots[i].getAccess_ts();
-
-//             for (int i = 0; i< slots.size(); i++) {
-//                 if (slots[i].getAccess_ts() < slot_ts) {
-//                     slots[i].increaseAccess_ts();
-//                 }
-//             }
-            
-//             // Set the access_ts of the hit to 0
-//             slots[i].setAccess_ts(0);
-//             return &slots[i];
-            
-//         }
-//     }
-//     return nullptr;
-// }
-
 Slot* Set::getSlot(uint32_t tag, uint64_t globalCounter) {
     for(int i = 0; i < slots.size(); i++) {
         if (slots[i].getTag() == tag && slots[i].isValid()) {
@@ -64,13 +41,7 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo, uint64_t globalCounter) {//
             slots[lowestCounterIndex].setTag(tag);
             slots[lowestCounterIndex].setValid(true);
             slots[lowestCounterIndex].setAccess_ts(globalCounter);  // Resetting counter
-
-            // Increment the counters for all other slots to signify they've aged by one cycle.
-            // for (int i = 0; i < slots.size(); ++i) {
-            //     if (i != lowestCounterIndex) {  // All slots except the one we've just accessed.
-            //         slots[i].increaseAccess_ts(); 
-            //     }
-            // }            
+ 
         }else if(fifo) {
             //increment load_ts in every block
             //find highest load_ts
@@ -101,10 +72,6 @@ bool Set::addSlot(uint32_t tag, bool lru, bool fifo, uint64_t globalCounter) {//
             slots.push_back(newSlot);
             currBlocks++;
 
-            // // As before, we increment the counters for all other entries.
-            // // for (int i = 0; i < slots.size() - 1; ++i) {  // 'slots.size() - 1' because we don't want to increment the counter for the new entry.
-            // //     slots[i].increaseAccess_ts();
-            // // }
         } else if(fifo) {
             //increment load_ts in every block
             //insert new block with load_ts = 0
