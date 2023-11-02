@@ -1,1993 +1,3666 @@
-Processing trace: gcc.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 21.00%
-Store Hit Percentage: 32.00%
-Total Cycles: 173795687
-----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 21.00%
-Store Hit Percentage: 32.00%
-Total Cycles: 173795687
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 29.00%
-Store Hit Percentage: 42.00%
-Total Cycles: 162151011
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 29.00%
-Store Hit Percentage: 42.00%
-Total Cycles: 162645976
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 37.00%
-Store Hit Percentage: 51.00%
-Total Cycles: 146863268
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 37.00%
-Store Hit Percentage: 50.00%
-Total Cycles: 148711244
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 27.00%
-Store Hit Percentage: 40.00%
-Total Cycles: 164291507
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 27.00%
-Store Hit Percentage: 40.00%
-Total Cycles: 164291507
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 38.00%
-Store Hit Percentage: 52.00%
-Total Cycles: 145954587
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 38.00%
-Store Hit Percentage: 52.00%
-Total Cycles: 147549525
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 53.00%
-Store Hit Percentage: 63.00%
-Total Cycles: 118136446
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 51.00%
-Store Hit Percentage: 61.00%
-Total Cycles: 124208283
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 37.00%
-Store Hit Percentage: 51.00%
-Total Cycles: 147973829
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 37.00%
-Store Hit Percentage: 51.00%
-Total Cycles: 147973829
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 51.00%
-Store Hit Percentage: 65.00%
-Total Cycles: 117634916
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 50.00%
-Store Hit Percentage: 63.00%
-Total Cycles: 121871970
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 71.00%
-Store Hit Percentage: 80.00%
-Total Cycles: 72692485
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 68.00%
-Store Hit Percentage: 76.00%
-Total Cycles: 83926262
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 51.00%
-Store Hit Percentage: 67.00%
-Total Cycles: 115022197
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 51.00%
-Store Hit Percentage: 67.00%
-Total Cycles: 115022197
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 70.00%
-Store Hit Percentage: 79.00%
-Total Cycles: 74578571
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 68.00%
-Store Hit Percentage: 77.00%
-Total Cycles: 80566504
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 86.00%
-Store Hit Percentage: 90.00%
-Total Cycles: 35681259
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 84.00%
-Store Hit Percentage: 88.00%
-Total Cycles: 41915429
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 67.00%
-Store Hit Percentage: 80.00%
-Total Cycles: 76469235
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 67.00%
-Store Hit Percentage: 80.00%
-Total Cycles: 76469235
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 84.00%
-Store Hit Percentage: 89.00%
-Total Cycles: 39059280
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 83.00%
-Store Hit Percentage: 89.00%
-Total Cycles: 42252772
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 20714551
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 92.00%
-Store Hit Percentage: 92.00%
-Total Cycles: 24396850
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 76.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 56454546
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 76.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 56454546
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 89.00%
-Store Hit Percentage: 92.00%
-Total Cycles: 27304122
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 89.00%
-Store Hit Percentage: 92.00%
-Total Cycles: 29637605
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 96.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 13989418
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 95.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 16386605
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 81.00%
-Store Hit Percentage: 88.00%
-Total Cycles: 46235632
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 81.00%
-Store Hit Percentage: 88.00%
-Total Cycles: 46235632
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 20234329
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 92.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 22266784
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 11166458
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 97.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 12749904
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 87.00%
-Store Hit Percentage: 90.00%
-Total Cycles: 32478453
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 87.00%
-Store Hit Percentage: 90.00%
-Total Cycles: 32478453
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 97.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 13126162
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 96.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 14403181
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=gcc.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 95.00%
-Total Cycles: 9863511
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 95.00%
-Total Cycles: 10694274
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=gcc.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 19773727
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 93.00%
-Total Cycles: 19773727
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=gcc.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 95.00%
-Total Cycles: 10483553
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=gcc.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 94.00%
-Total Cycles: 11149847
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=gcc.trace
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314798
+Load misses: 3399
+Store hits: 188250
+Store misses: 9236
+Total cycles: 9178385
 Load Hit Percentage: 98.00%
 Store Hit Percentage: 95.00%
 Total Cycles: 9178385
 ----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=gcc.trace
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314171
+Load misses: 4026
+Store hits: 188047
+Store misses: 9439
+Total cycles: 9678770
 Load Hit Percentage: 98.00%
 Store Hit Percentage: 95.00%
 Total Cycles: 9678770
 ----------------------------------------
-Processing trace: read01.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=read01.trace
-Load Hit Percentage: 40.00%
-Store Hit Percentage: %
-Total Cycles: 1205
-----------------------------------------
-Processing trace: read02.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=read02.trace
-Load Hit Percentage: 90.00%
-Store Hit Percentage: %
-Total Cycles: 410
-----------------------------------------
-Processing trace: read03.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 22.00%
-Store Hit Percentage: %
-Total Cycles: 2809
-----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 22.00%
-Store Hit Percentage: %
-Total Cycles: 2809
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 44.00%
-Store Hit Percentage: %
-Total Cycles: 2009
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 44.00%
-Store Hit Percentage: %
-Total Cycles: 2009
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 44.00%
-Store Hit Percentage: %
-Total Cycles: 2009
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 44.00%
-Store Hit Percentage: %
-Total Cycles: 2009
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=read03.trace
-Load Hit Percentage: 55.00%
-Store Hit Percentage: %
-Total Cycles: 1609
-----------------------------------------
-Processing trace: swim.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 20.00%
-Store Hit Percentage: 22.00%
-Total Cycles: 102956193
-----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 20.00%
-Store Hit Percentage: 22.00%
-Total Cycles: 102956193
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 23.00%
-Store Hit Percentage: 31.00%
-Total Cycles: 99594949
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 23.00%
-Store Hit Percentage: 31.00%
-Total Cycles: 99697999
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 29.00%
-Store Hit Percentage: 47.00%
-Total Cycles: 93473883
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 28.00%
-Store Hit Percentage: 47.00%
-Total Cycles: 94319791
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 24.00%
-Store Hit Percentage: 32.00%
-Total Cycles: 99053389
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 24.00%
-Store Hit Percentage: 32.00%
-Total Cycles: 99053389
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 29.00%
-Store Hit Percentage: 48.00%
-Total Cycles: 93256818
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 28.00%
-Store Hit Percentage: 48.00%
-Total Cycles: 93500365
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 39.00%
-Store Hit Percentage: 53.00%
-Total Cycles: 83154387
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 39.00%
-Store Hit Percentage: 53.00%
-Total Cycles: 83052541
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 28.00%
-Store Hit Percentage: 50.00%
-Total Cycles: 92366432
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 28.00%
-Store Hit Percentage: 50.00%
-Total Cycles: 92366432
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 38.00%
-Store Hit Percentage: 57.00%
-Total Cycles: 80400948
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 39.00%
-Store Hit Percentage: 57.00%
-Total Cycles: 80057962
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 62.00%
-Store Hit Percentage: 69.00%
-Total Cycles: 54222948
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 60.00%
-Store Hit Percentage: 68.00%
-Total Cycles: 58107144
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 38.00%
-Store Hit Percentage: 62.00%
-Total Cycles: 79491029
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 38.00%
-Store Hit Percentage: 62.00%
-Total Cycles: 79491029
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 52.00%
-Store Hit Percentage: 74.00%
-Total Cycles: 61240652
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 51.00%
-Store Hit Percentage: 73.00%
-Total Cycles: 64432187
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 82.00%
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314007
+Load misses: 4190
+Store hits: 188015
+Store misses: 9471
+Total cycles: 9863511
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 9863511
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 313059
+Load misses: 5138
+Store hits: 187779
+Store misses: 9707
+Total cycles: 10483553
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 10483553
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312969
+Load misses: 5228
+Store hits: 187684
+Store misses: 9802
+Total cycles: 10694274
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 10694274
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312298
+Load misses: 5899
+Store hits: 187483
+Store misses: 10003
+Total cycles: 11149847
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 11149847
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312099
+Load misses: 6098
+Store hits: 187526
+Store misses: 9960
+Total cycles: 11166458
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 11166458
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 310136
+Load misses: 8061
+Store hits: 186911
+Store misses: 10575
+Total cycles: 12749904
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 12749904
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 309037
+Load misses: 9160
+Store hits: 187099
+Store misses: 10387
+Total cycles: 13126162
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 13126162
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 307659
+Load misses: 10538
+Store hits: 186542
+Store misses: 10944
+Total cycles: 13989418
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 13989418
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 307286
+Load misses: 10911
+Store hits: 186637
+Store misses: 10849
+Total cycles: 14403181
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 14403181
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 304792
+Load misses: 13405
+Store hits: 185587
+Store misses: 11899
+Total cycles: 16386605
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 16386605
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 298863
+Load misses: 19334
+Store hits: 185202
+Store misses: 12284
+Total cycles: 19773727
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 19773727
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 297161
+Load misses: 21036
+Store hits: 185151
+Store misses: 12335
+Total cycles: 20234329
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 20234329
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 297243
+Load misses: 20954
+Store hits: 184121
+Store misses: 13365
+Total cycles: 20714551
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 20714551
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 294639
+Load misses: 23558
+Store hits: 184359
+Store misses: 13127
+Total cycles: 22266784
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 22266784
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 311613
+Load misses: 6584
+Store hits: 164819
+Store misses: 32667
+Total cycles: 22865216
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 83.00%
+Total Cycles: 22865216
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 311017
+Load misses: 7180
+Store hits: 163705
+Store misses: 33781
+Total cycles: 23102502
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 23102502
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 310963
+Load misses: 7234
+Store hits: 164328
+Store misses: 33158
+Total cycles: 23124725
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 83.00%
+Total Cycles: 23124725
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 310059
+Load misses: 8138
+Store hits: 163941
+Store misses: 33545
+Total cycles: 23485938
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 83.00%
+Total Cycles: 23485938
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 310010
+Load misses: 8187
+Store hits: 163165
+Store misses: 34321
+Total cycles: 23504762
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 23504762
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 309320
+Load misses: 8877
+Store hits: 162878
+Store misses: 34608
+Total cycles: 23780475
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 23780475
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 309073
+Load misses: 9124
+Store hits: 163467
+Store misses: 34019
+Total cycles: 23879864
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 23879864
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314798
+Load misses: 3399
+Store hits: 188250
+Store misses: 9236
+Total cycles: 24394683
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 24394683
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 293463
+Load misses: 24734
+Store hits: 182464
+Store misses: 15022
+Total cycles: 24396850
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 24396850
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 307258
+Load misses: 10939
+Store hits: 160277
+Store misses: 37209
+Total cycles: 24602674
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 24602674
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314171
+Load misses: 4026
+Store hits: 188047
+Store misses: 9439
+Total cycles: 24706383
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 24706383
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 314007
+Load misses: 4190
+Store hits: 188015
+Store misses: 9471
+Total cycles: 24781583
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 24781583
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 306174
+Load misses: 12023
+Store hits: 162785
+Store misses: 34701
+Total cycles: 25038782
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 25038782
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 313059
+Load misses: 5138
+Store hits: 187779
+Store misses: 9707
+Total cycles: 25231583
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 25231583
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312969
+Load misses: 5228
+Store hits: 187684
+Store misses: 9802
+Total cycles: 25296083
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 95.00%
+Total Cycles: 25296083
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 305212
+Load misses: 12985
+Store hits: 160678
+Store misses: 36808
+Total cycles: 25421475
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 25421475
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312298
+Load misses: 5899
+Store hits: 187483
+Store misses: 10003
+Total cycles: 25624783
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 25624783
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 312099
+Load misses: 6098
+Store hits: 187526
+Store misses: 9960
+Total cycles: 25691483
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 25691483
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 304433
+Load misses: 13764
+Store hits: 160161
+Store misses: 37325
+Total cycles: 25732558
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 25732558
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 302182
+Load misses: 16015
+Store hits: 158619
+Store misses: 38867
+Total cycles: 26631416
+Load Hit Percentage: 94.00%
 Store Hit Percentage: 80.00%
-Total Cycles: 29691622
+Total Cycles: 26631416
 ----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 79.00%
-Store Hit Percentage: 78.00%
-Total Cycles: 34965749
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 310136
+Load misses: 8061
+Store hits: 186911
+Store misses: 10575
+Total cycles: 26661183
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 26661183
 ----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 56.00%
-Store Hit Percentage: 70.00%
-Total Cycles: 59124688
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 309037
+Load misses: 9160
+Store hits: 187099
+Store misses: 10387
+Total cycles: 27044383
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 27044383
 ----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 56.00%
-Store Hit Percentage: 70.00%
-Total Cycles: 59124688
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 286082
+Load misses: 32115
+Store hits: 182729
+Store misses: 14757
+Total cycles: 27304122
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 27304122
 ----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 77.00%
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 307659
+Load misses: 10538
+Store hits: 186542
+Store misses: 10944
+Total cycles: 27762683
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 27762683
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 307286
+Load misses: 10911
+Store hits: 186637
+Store misses: 10849
+Total cycles: 27883383
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 94.00%
+Total Cycles: 27883383
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 296251
+Load misses: 21946
+Store hits: 158894
+Store misses: 38592
+Total cycles: 29004091
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 29004091
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 304792
+Load misses: 13405
+Store hits: 185587
+Store misses: 11899
+Total cycles: 29195983
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 29195983
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 294905
+Load misses: 23292
+Store hits: 157276
+Store misses: 40210
+Total cycles: 29540873
+Load Hit Percentage: 92.00%
 Store Hit Percentage: 79.00%
-Total Cycles: 34019948
+Total Cycles: 29540873
 ----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 75.00%
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 283673
+Load misses: 34524
+Store hits: 181720
+Store misses: 15766
+Total cycles: 29637605
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 29637605
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 294409
+Load misses: 23788
+Store hits: 158348
+Store misses: 39138
+Total cycles: 29740345
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 29740345
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 291811
+Load misses: 26386
+Store hits: 156576
+Store misses: 40910
+Total cycles: 30777773
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 79.00%
+Total Cycles: 30777773
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 290425
+Load misses: 27772
+Store hits: 154305
+Store misses: 43181
+Total cycles: 31329902
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 78.00%
+Total Cycles: 31329902
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 298863
+Load misses: 19334
+Store hits: 185202
+Store misses: 12284
+Total cycles: 31683083
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 31683083
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 297161
+Load misses: 21036
+Store hits: 185151
+Store misses: 12335
+Total cycles: 32379183
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 32379183
+----------------------------------------
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 279902
+Load misses: 38295
+Store hits: 179498
+Store misses: 17988
+Total cycles: 32478453
+Load Hit Percentage: 87.00%
+Store Hit Percentage: 90.00%
+Total Cycles: 32478453
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 297243
+Load misses: 20954
+Store hits: 184121
+Store misses: 13365
+Total cycles: 32655383
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 32655383
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 294639
+Load misses: 23558
+Store hits: 184359
+Store misses: 13127
+Total cycles: 33625583
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 93.00%
+Total Cycles: 33625583
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 283636
+Load misses: 34561
+Store hits: 154707
+Store misses: 42779
+Total cycles: 34045904
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 78.00%
+Total Cycles: 34045904
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 293463
+Load misses: 24734
+Store hits: 182464
+Store misses: 15022
+Total cycles: 34664483
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 34664483
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 280993
+Load misses: 37204
+Store hits: 152677
+Store misses: 44809
+Total cycles: 35101074
+Load Hit Percentage: 88.00%
 Store Hit Percentage: 77.00%
-Total Cycles: 37308634
+Total Cycles: 35101074
 ----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 82.00%
-Total Cycles: 16799537
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 275043
+Load misses: 43154
+Store hits: 178567
+Store misses: 18919
+Total cycles: 35681259
+Load Hit Percentage: 86.00%
+Store Hit Percentage: 90.00%
+Total Cycles: 35681259
 ----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 91.00%
-Store Hit Percentage: 81.00%
-Total Cycles: 20522720
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 278823
+Load misses: 39374
+Store hits: 147985
+Store misses: 49501
+Total cycles: 35964382
+Load Hit Percentage: 87.00%
+Store Hit Percentage: 74.00%
+Total Cycles: 35964382
 ----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 74.00%
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 286082
+Load misses: 32115
+Store hits: 182729
+Store misses: 14757
+Total cycles: 37537383
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 37537383
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 283673
+Load misses: 34524
+Store hits: 181720
+Store misses: 15766
+Total cycles: 38803683
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 92.00%
+Total Cycles: 38803683
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 271497
+Load misses: 46700
+Store hits: 148796
+Store misses: 48690
+Total cycles: 38895593
+Load Hit Percentage: 85.00%
+Store Hit Percentage: 75.00%
+Total Cycles: 38895593
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 269886
+Load misses: 48311
+Store hits: 177313
+Store misses: 20173
+Total cycles: 39059280
+Load Hit Percentage: 84.00%
+Store Hit Percentage: 89.00%
+Total Cycles: 39059280
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 266329
+Load misses: 51868
+Store hits: 147622
+Store misses: 49864
+Total cycles: 40961619
+Load Hit Percentage: 83.00%
+Store Hit Percentage: 74.00%
+Total Cycles: 40961619
+----------------------------------------
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 279902
+Load misses: 38295
+Store hits: 179498
+Store misses: 17988
+Total cycles: 40978683
+Load Hit Percentage: 87.00%
+Store Hit Percentage: 90.00%
+Total Cycles: 40978683
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 269541
+Load misses: 48656
+Store hits: 175112
+Store misses: 22374
+Total cycles: 41915429
+Load Hit Percentage: 84.00%
+Store Hit Percentage: 88.00%
+Total Cycles: 41915429
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 263597
+Load misses: 54600
+Store hits: 143849
+Store misses: 53637
+Total cycles: 42050646
+Load Hit Percentage: 82.00%
+Store Hit Percentage: 72.00%
+Total Cycles: 42050646
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 263121
+Load misses: 55076
+Store hits: 145177
+Store misses: 52309
+Total cycles: 42242374
+Load Hit Percentage: 82.00%
+Store Hit Percentage: 73.00%
+Total Cycles: 42242374
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 266660
+Load misses: 51537
+Store hits: 175824
+Store misses: 21662
+Total cycles: 42252772
+Load Hit Percentage: 83.00%
+Store Hit Percentage: 89.00%
+Total Cycles: 42252772
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 275043
+Load misses: 43154
+Store hits: 178567
+Store misses: 18919
+Total cycles: 43201583
+Load Hit Percentage: 86.00%
+Store Hit Percentage: 90.00%
+Total Cycles: 43201583
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 259759
+Load misses: 58438
+Store hits: 141497
+Store misses: 55989
+Total cycles: 43583494
+Load Hit Percentage: 81.00%
+Store Hit Percentage: 71.00%
+Total Cycles: 43583494
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 269886
+Load misses: 48311
+Store hits: 177313
+Store misses: 20173
+Total cycles: 45640583
+Load Hit Percentage: 84.00%
+Store Hit Percentage: 89.00%
+Total Cycles: 45640583
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 260084
+Load misses: 58113
+Store hits: 173877
+Store misses: 23609
+Total cycles: 46235632
+Load Hit Percentage: 81.00%
+Store Hit Percentage: 88.00%
+Total Cycles: 46235632
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 269541
+Load misses: 48656
+Store hits: 175112
+Store misses: 22374
+Total cycles: 46438883
+Load Hit Percentage: 84.00%
+Store Hit Percentage: 88.00%
+Total Cycles: 46438883
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 266660
+Load misses: 51537
+Store hits: 175824
+Store misses: 21662
+Total cycles: 47377683
+Load Hit Percentage: 83.00%
+Store Hit Percentage: 89.00%
+Total Cycles: 47377683
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 243434
+Load misses: 74763
+Store hits: 136925
+Store misses: 60561
+Total cycles: 50108922
+Load Hit Percentage: 76.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 50108922
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 260084
+Load misses: 58113
+Store hits: 173877
+Store misses: 23609
+Total cycles: 50592183
+Load Hit Percentage: 81.00%
+Store Hit Percentage: 88.00%
+Total Cycles: 50592183
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 243746
+Load misses: 74451
+Store hits: 169794
+Store misses: 27692
+Total cycles: 56454546
+Load Hit Percentage: 76.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 56454546
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 243746
+Load misses: 74451
+Store hits: 169794
+Store misses: 27692
+Total cycles: 58352283
+Load Hit Percentage: 76.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 58352283
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 220288
+Load misses: 97909
+Store hits: 124248
+Store misses: 73238
+Total cycles: 59354645
+Load Hit Percentage: 69.00%
+Store Hit Percentage: 62.00%
+Total Cycles: 59354645
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 219740
+Load misses: 98457
+Store hits: 122424
+Store misses: 75062
+Total cycles: 59572021
+Load Hit Percentage: 69.00%
+Store Hit Percentage: 61.00%
+Total Cycles: 59572021
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 212799
+Load misses: 105398
+Store hits: 120656
+Store misses: 76830
+Total cycles: 62346653
+Load Hit Percentage: 66.00%
+Store Hit Percentage: 61.00%
+Total Cycles: 62346653
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 211005
+Load misses: 107192
+Store hits: 122922
+Store misses: 74564
+Total cycles: 63066519
+Load Hit Percentage: 66.00%
+Store Hit Percentage: 62.00%
+Total Cycles: 63066519
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 209071
+Load misses: 109126
+Store hits: 117540
+Store misses: 79946
+Total cycles: 63834737
+Load Hit Percentage: 65.00%
+Store Hit Percentage: 59.00%
+Total Cycles: 63834737
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 226203
+Load misses: 91994
+Store hits: 158644
+Store misses: 38842
+Total cycles: 68714483
+Load Hit Percentage: 71.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 68714483
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 222796
+Load misses: 95401
+Store hits: 157904
+Store misses: 39582
+Total cycles: 70299283
+Load Hit Percentage: 70.00%
+Store Hit Percentage: 79.00%
+Total Cycles: 70299283
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 226203
+Load misses: 91994
+Store hits: 158644
+Store misses: 38842
+Total cycles: 72692485
+Load Hit Percentage: 71.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 72692485
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 214260
+Load misses: 103937
+Store hits: 159248
+Store misses: 38238
+Total cycles: 73310483
+Load Hit Percentage: 67.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 73310483
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 217391
+Load misses: 100806
+Store hits: 153265
+Store misses: 44221
+Total cycles: 73852983
+Load Hit Percentage: 68.00%
+Store Hit Percentage: 77.00%
+Total Cycles: 73852983
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 216821
+Load misses: 101376
+Store hits: 151658
+Store misses: 45828
+Total cycles: 74563083
+Load Hit Percentage: 68.00%
 Store Hit Percentage: 76.00%
-Total Cycles: 39871338
+Total Cycles: 74563083
 ----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 74.00%
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 222796
+Load misses: 95401
+Store hits: 157904
+Store misses: 39582
+Total cycles: 74578571
+Load Hit Percentage: 70.00%
+Store Hit Percentage: 79.00%
+Total Cycles: 74578571
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 214260
+Load misses: 103937
+Store hits: 159248
+Store misses: 38238
+Total cycles: 76469235
+Load Hit Percentage: 67.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 76469235
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 217391
+Load misses: 100806
+Store hits: 153265
+Store misses: 44221
+Total cycles: 80566504
+Load Hit Percentage: 68.00%
+Store Hit Percentage: 77.00%
+Total Cycles: 80566504
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 216821
+Load misses: 101376
+Store hits: 151658
+Store misses: 45828
+Total cycles: 83926262
+Load Hit Percentage: 68.00%
 Store Hit Percentage: 76.00%
-Total Cycles: 39871338
+Total Cycles: 83926262
 ----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 91.00%
-Store Hit Percentage: 82.00%
-Total Cycles: 19608448
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 156911
+Load misses: 161286
+Store hits: 90814
+Store misses: 106672
+Total cycles: 84672011
+Load Hit Percentage: 49.00%
+Store Hit Percentage: 45.00%
+Total Cycles: 84672011
 ----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=swim.trace
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 156833
+Load misses: 161364
+Store hits: 89407
+Store misses: 108079
+Total cycles: 84701804
+Load Hit Percentage: 49.00%
+Store Hit Percentage: 45.00%
+Total Cycles: 84701804
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 154556
+Load misses: 163641
+Store hits: 91607
+Store misses: 105879
+Total cycles: 85614804
+Load Hit Percentage: 48.00%
+Store Hit Percentage: 46.00%
+Total Cycles: 85614804
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 151239
+Load misses: 166958
+Store hits: 89685
+Store misses: 107801
+Total cycles: 86939682
+Load Hit Percentage: 47.00%
+Store Hit Percentage: 45.00%
+Total Cycles: 86939682
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 150669
+Load misses: 167528
+Store hits: 88422
+Store misses: 109064
+Total cycles: 87166419
+Load Hit Percentage: 47.00%
+Store Hit Percentage: 44.00%
+Total Cycles: 87166419
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118340
+Load misses: 199857
+Store hits: 52112
+Store misses: 145374
+Total cycles: 100061709
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 26.00%
+Total Cycles: 100061709
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118312
+Load misses: 199885
+Store hits: 51158
+Store misses: 146328
+Total cycles: 100071955
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 25.00%
+Total Cycles: 100071955
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 117913
+Load misses: 200284
+Store hits: 54139
+Store misses: 143347
+Total cycles: 100234536
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 27.00%
+Total Cycles: 100234536
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 117266
+Load misses: 200931
+Store hits: 53524
+Store misses: 143962
+Total cycles: 100492721
+Load Hit Percentage: 36.00%
+Store Hit Percentage: 27.00%
+Total Cycles: 100492721
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 169380
+Load misses: 148817
+Store hits: 125562
+Store misses: 71924
+Total cycles: 101368283
+Load Hit Percentage: 53.00%
+Store Hit Percentage: 63.00%
+Total Cycles: 101368283
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 163920
+Load misses: 154277
+Store hits: 132438
+Store misses: 65048
+Total cycles: 101489483
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 101489483
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 164168
+Load misses: 154029
+Store hits: 128773
+Store misses: 68713
+Total cycles: 102489783
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 65.00%
+Total Cycles: 102489783
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 110103
+Load misses: 208094
+Store hits: 53390
+Store misses: 144096
+Total cycles: 103357787
+Load Hit Percentage: 34.00%
+Store Hit Percentage: 27.00%
+Total Cycles: 103357787
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 159294
+Load misses: 158903
+Store hits: 126378
+Store misses: 71108
+Total cycles: 105157883
+Load Hit Percentage: 50.00%
+Store Hit Percentage: 63.00%
+Total Cycles: 105157883
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 162512
+Load misses: 155685
+Store hits: 121613
+Store misses: 75873
+Total cycles: 105300183
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 61.00%
+Total Cycles: 105300183
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 92256
+Load misses: 225941
+Store hits: 34855
+Store misses: 162631
+Total cycles: 110478052
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 17.00%
+Total Cycles: 110478052
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 90944
+Load misses: 227253
+Store hits: 34424
+Store misses: 163062
+Total cycles: 111002421
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 17.00%
+Total Cycles: 111002421
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 86614
+Load misses: 231583
+Store hits: 33527
+Store misses: 163959
+Total cycles: 112733524
+Load Hit Percentage: 27.00%
+Store Hit Percentage: 16.00%
+Total Cycles: 112733524
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 163920
+Load misses: 154277
+Store hits: 132438
+Store misses: 65048
+Total cycles: 115022197
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 115022197
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 164168
+Load misses: 154029
+Store hits: 128773
+Store misses: 68713
+Total cycles: 117634916
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 65.00%
+Total Cycles: 117634916
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 169380
+Load misses: 148817
+Store hits: 125562
+Store misses: 71924
+Total cycles: 118136446
+Load Hit Percentage: 53.00%
+Store Hit Percentage: 63.00%
+Total Cycles: 118136446
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 69375
+Load misses: 248822
+Store hits: 22390
+Store misses: 175096
+Total cycles: 119617987
+Load Hit Percentage: 21.00%
+Store Hit Percentage: 11.00%
+Total Cycles: 119617987
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 159294
+Load misses: 158903
+Store hits: 126378
+Store misses: 71108
+Total cycles: 121871970
+Load Hit Percentage: 50.00%
+Store Hit Percentage: 63.00%
+Total Cycles: 121871970
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 162512
+Load misses: 155685
+Store hits: 121613
+Store misses: 75873
+Total cycles: 124208283
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 61.00%
+Total Cycles: 124208283
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 122416
+Load misses: 195781
+Store hits: 102972
+Store misses: 94514
+Total cycles: 126930883
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 52.00%
+Total Cycles: 126930883
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 122130
+Load misses: 196067
+Store hits: 103137
+Store misses: 94349
+Total cycles: 126995783
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 52.00%
+Total Cycles: 126995783
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 120364
+Load misses: 197833
+Store hits: 101401
+Store misses: 96085
+Total cycles: 128222983
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 51.00%
+Total Cycles: 128222983
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118132
+Load misses: 200065
+Store hits: 101027
+Store misses: 96459
+Total cycles: 129227983
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 51.00%
+Total Cycles: 129227983
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118260
+Load misses: 199937
+Store hits: 100341
+Store misses: 97145
+Total cycles: 129382583
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 50.00%
+Total Cycles: 129382583
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 93585
+Load misses: 224612
+Store hits: 84149
+Store misses: 113337
+Total cycles: 144110183
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 42.00%
+Total Cycles: 144110183
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 93346
+Load misses: 224851
+Store hits: 83661
+Store misses: 113825
+Total cycles: 144352183
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 42.00%
+Total Cycles: 144352183
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 122130
+Load misses: 196067
+Store hits: 103137
+Store misses: 94349
+Total cycles: 145954587
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 52.00%
+Total Cycles: 145954587
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 120364
+Load misses: 197833
+Store hits: 101401
+Store misses: 96085
+Total cycles: 146863268
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 51.00%
+Total Cycles: 146863268
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 88947
+Load misses: 229250
+Store hits: 80370
+Store misses: 117116
+Total cycles: 147099083
+Load Hit Percentage: 27.00%
+Store Hit Percentage: 40.00%
+Total Cycles: 147099083
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 122416
+Load misses: 195781
+Store hits: 102972
+Store misses: 94514
+Total cycles: 147549525
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 52.00%
+Total Cycles: 147549525
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118132
+Load misses: 200065
+Store hits: 101027
+Store misses: 96459
+Total cycles: 147973829
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 51.00%
+Total Cycles: 147973829
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 118260
+Load misses: 199937
+Store hits: 100341
+Store misses: 97145
+Total cycles: 148711244
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 50.00%
+Total Cycles: 148711244
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 69728
+Load misses: 248469
+Store hits: 64520
+Store misses: 132966
+Total cycles: 159541683
+Load Hit Percentage: 21.00%
+Store Hit Percentage: 32.00%
+Total Cycles: 159541683
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 93585
+Load misses: 224612
+Store hits: 84149
+Store misses: 113337
+Total cycles: 162151011
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 42.00%
+Total Cycles: 162151011
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 93346
+Load misses: 224851
+Store hits: 83661
+Store misses: 113825
+Total cycles: 162645976
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 42.00%
+Total Cycles: 162645976
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 88947
+Load misses: 229250
+Store hits: 80370
+Store misses: 117116
+Total cycles: 164291507
+Load Hit Percentage: 27.00%
+Store Hit Percentage: 40.00%
+Total Cycles: 164291507
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=gcc.trace
+Total loads: 318197
+Total stores: 197486
+Load hits: 69728
+Load misses: 248469
+Store hits: 64520
+Store misses: 132966
+Total cycles: 173795687
+Load Hit Percentage: 21.00%
+Store Hit Percentage: 32.00%
+Total Cycles: 173795687
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=read01.trace
+Total loads: 5
+Total stores: 0
+Load hits: 2
+Load misses: 3
+Store hits: 0
+Store misses: 0
+Total cycles: 1205
+Load Hit Percentage: 40.00%
+Store Hit Percentage: N/A%
+Total Cycles: 1205
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=read02.trace
+Total loads: 10
+Total stores: 0
+Load hits: 9
+Load misses: 1
+Store hits: 0
+Store misses: 0
+Total cycles: 410
 Load Hit Percentage: 90.00%
-Store Hit Percentage: 81.00%
-Total Cycles: 21791767
+Store Hit Percentage: N/A%
+Total Cycles: 410
 ----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 95.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 13579495
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=read03.trace
+Total loads: 9
+Total stores: 0
+Load hits: 5
+Load misses: 4
+Store hits: 0
+Store misses: 0
+Total cycles: 1609
+Load Hit Percentage: 55.00%
+Store Hit Percentage: N/A%
+Total Cycles: 1609
 ----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 94.00%
-Store Hit Percentage: 84.00%
-Total Cycles: 15903193
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=read03.trace
+Total loads: 9
+Total stores: 0
+Load hits: 4
+Load misses: 5
+Store hits: 0
+Store misses: 0
+Total cycles: 2009
+Load Hit Percentage: 44.00%
+Store Hit Percentage: N/A%
+Total Cycles: 2009
 ----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 83.00%
-Store Hit Percentage: 80.00%
-Total Cycles: 27508646
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=read03.trace
+Total loads: 9
+Total stores: 0
+Load hits: 2
+Load misses: 7
+Store hits: 0
+Store misses: 0
+Total cycles: 2809
+Load Hit Percentage: 22.00%
+Store Hit Percentage: N/A%
+Total Cycles: 2809
 ----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 83.00%
-Store Hit Percentage: 80.00%
-Total Cycles: 27508646
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 94.00%
-Store Hit Percentage: 84.00%
-Total Cycles: 14508120
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 93.00%
-Store Hit Percentage: 84.00%
-Total Cycles: 16178653
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 97.00%
-Store Hit Percentage: 86.00%
-Total Cycles: 11139325
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 96.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 12554742
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 87.00%
-Store Hit Percentage: 83.00%
-Total Cycles: 21967745
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 87.00%
-Store Hit Percentage: 83.00%
-Total Cycles: 21967745
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 97.00%
-Store Hit Percentage: 86.00%
-Total Cycles: 11529686
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 96.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 13026609
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=swim.trace
-Load Hit Percentage: 99.00%
-Store Hit Percentage: 87.00%
-Total Cycles: 9015245
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=swim.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 86.00%
-Total Cycles: 10401594
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=swim.trace
-Load Hit Percentage: 95.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 13528256
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=swim.trace
-Load Hit Percentage: 95.00%
-Store Hit Percentage: 85.00%
-Total Cycles: 13528256
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=swim.trace
-Load Hit Percentage: 99.00%
-Store Hit Percentage: 86.00%
-Total Cycles: 9194799
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=swim.trace
-Load Hit Percentage: 98.00%
-Store Hit Percentage: 86.00%
-Total Cycles: 10366023
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=swim.trace
+
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 219507
+Load misses: 1161
+Store hits: 71956
+Store misses: 10569
+Total cycles: 8483931
 Load Hit Percentage: 99.00%
 Store Hit Percentage: 87.00%
 Total Cycles: 8483931
 ----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=swim.trace
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218920
+Load misses: 1748
+Store hits: 71854
+Store misses: 10671
+Total cycles: 9015245
+Load Hit Percentage: 99.00%
+Store Hit Percentage: 87.00%
+Total Cycles: 9015245
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218357
+Load misses: 2311
+Store hits: 71787
+Store misses: 10738
+Total cycles: 9129502
 Load Hit Percentage: 98.00%
 Store Hit Percentage: 86.00%
 Total Cycles: 9129502
 ----------------------------------------
-Processing trace: write01.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218709
+Load misses: 1959
+Store hits: 71759
+Store misses: 10766
+Total cycles: 9194799
+Load Hit Percentage: 99.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 9194799
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218072
+Load misses: 2596
+Store hits: 58030
+Store misses: 24495
+Total cycles: 9569598
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 9569598
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 217968
+Load misses: 2700
+Store hits: 57994
+Store misses: 24531
+Total cycles: 9611162
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 9611162
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 217843
+Load misses: 2825
+Store hits: 57874
+Store misses: 24651
+Total cycles: 9661042
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 9661042
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 217693
+Load misses: 2975
+Store hits: 57827
+Store misses: 24698
+Total cycles: 9720995
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 9720995
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 217604
+Load misses: 3064
+Store hits: 57811
+Store misses: 24714
+Total cycles: 9756579
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 9756579
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 217485
+Load misses: 3183
+Store hits: 57750
+Store misses: 24775
+Total cycles: 9804118
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 9804118
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 216713
+Load misses: 3955
+Store hits: 57503
+Store misses: 25022
+Total cycles: 10112671
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 10112671
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 216649
+Load misses: 4019
+Store hits: 71445
+Store misses: 11080
+Total cycles: 10366023
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 10366023
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 216476
+Load misses: 4192
+Store hits: 71495
+Store misses: 11030
+Total cycles: 10401594
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 10401594
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 215972
+Load misses: 4696
+Store hits: 57372
+Store misses: 25153
+Total cycles: 10408940
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 10408940
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 215838
+Load misses: 4830
+Store hits: 57414
+Store misses: 25111
+Total cycles: 10462582
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 10462582
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 215294
+Load misses: 5374
+Store hits: 57204
+Store misses: 25321
+Total cycles: 10679972
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 10679972
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 214923
+Load misses: 5745
+Store hits: 71353
+Store misses: 11172
+Total cycles: 11139325
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 11139325
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 213913
+Load misses: 6755
+Store hits: 56637
+Store misses: 25888
+Total cycles: 11231805
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 11231805
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 214412
+Load misses: 6256
+Store hits: 71210
+Store misses: 11315
+Total cycles: 11529686
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 11529686
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 211841
+Load misses: 8827
+Store hits: 56947
+Store misses: 25578
+Total cycles: 12060915
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 12060915
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 219507
+Load misses: 1161
+Store hits: 71956
+Store misses: 10569
+Total cycles: 12190793
+Load Hit Percentage: 99.00%
+Store Hit Percentage: 87.00%
+Total Cycles: 12190793
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218920
+Load misses: 1748
+Store hits: 71854
+Store misses: 10671
+Total cycles: 12456193
+Load Hit Percentage: 99.00%
+Store Hit Percentage: 87.00%
+Total Cycles: 12456193
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 210724
+Load misses: 9944
+Store hits: 56734
+Store misses: 25791
+Total cycles: 12507502
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 12507502
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 212965
+Load misses: 7703
+Store hits: 70881
+Store misses: 11644
+Total cycles: 12554742
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 12554742
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218709
+Load misses: 1959
+Store hits: 71759
+Store misses: 10766
+Total cycles: 12569093
+Load Hit Percentage: 99.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 12569093
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 210253
+Load misses: 10415
+Store hits: 56625
+Store misses: 25900
+Total cycles: 12695793
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 12695793
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 218357
+Load misses: 2311
+Store hits: 71787
+Store misses: 10738
+Total cycles: 12701493
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 12701493
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 212134
+Load misses: 8534
+Store hits: 70780
+Store misses: 11745
+Total cycles: 13026609
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 13026609
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 209389
+Load misses: 11279
+Store hits: 56346
+Store misses: 26179
+Total cycles: 13041114
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 13041114
+----------------------------------------
+
+Configuration: sets=256, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 216649
+Load misses: 4019
+Store hits: 71445
+Store misses: 11080
+Total cycles: 13487293
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 13487293
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 211533
+Load misses: 9135
+Store hits: 70212
+Store misses: 12313
+Total cycles: 13528256
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 13528256
+----------------------------------------
+
+Configuration: sets=128, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 216476
+Load misses: 4192
+Store hits: 71495
+Store misses: 11030
+Total cycles: 13541493
+Load Hit Percentage: 98.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 13541493
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 208073
+Load misses: 12595
+Store hits: 56004
+Store misses: 26521
+Total cycles: 13567172
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 13567172
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 210955
+Load misses: 9713
+Store hits: 70387
+Store misses: 12138
+Total cycles: 13579495
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 13579495
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 214923
+Load misses: 5745
+Store hits: 71353
+Store misses: 11172
+Total cycles: 14205293
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 14205293
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 214412
+Load misses: 6256
+Store hits: 71210
+Store misses: 11315
+Total cycles: 14452593
+Load Hit Percentage: 97.00%
+Store Hit Percentage: 86.00%
+Total Cycles: 14452593
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 209494
+Load misses: 11174
+Store hits: 70094
+Store misses: 12431
+Total cycles: 14508120
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 14508120
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 204815
+Load misses: 15853
+Store hits: 55376
+Store misses: 27149
+Total cycles: 14869744
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 14869744
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 204363
+Load misses: 16305
+Store hits: 55646
+Store misses: 26879
+Total cycles: 15050814
+Load Hit Percentage: 92.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 15050814
+----------------------------------------
+
+Configuration: sets=64, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 212965
+Load misses: 7703
+Store hits: 70881
+Store misses: 11644
+Total cycles: 15130093
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 15130093
+----------------------------------------
+
+Configuration: sets=128, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 212134
+Load misses: 8534
+Store hits: 70780
+Store misses: 11745
+Total cycles: 15492793
+Load Hit Percentage: 96.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 15492793
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 202580
+Load misses: 18088
+Store hits: 55172
+Store misses: 27353
+Total cycles: 15763540
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 66.00%
+Total Cycles: 15763540
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 208037
+Load misses: 12631
+Store hits: 69606
+Store misses: 12919
+Total cycles: 15903193
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 15903193
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 211533
+Load misses: 9135
+Store hits: 70212
+Store misses: 12313
+Total cycles: 15903593
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 15903593
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 210955
+Load misses: 9713
+Store hits: 70387
+Store misses: 12138
+Total cycles: 16082293
+Load Hit Percentage: 95.00%
+Store Hit Percentage: 85.00%
+Total Cycles: 16082293
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 207404
+Load misses: 13264
+Store hits: 69519
+Store misses: 13006
+Total cycles: 16178653
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 16178653
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 209494
+Load misses: 11174
+Store hits: 70094
+Store misses: 12431
+Total cycles: 16754593
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 16754593
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 206490
+Load misses: 14178
+Store hits: 68489
+Store misses: 14036
+Total cycles: 16799537
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 16799537
+----------------------------------------
+
+Configuration: sets=32, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 208037
+Load misses: 12631
+Store hits: 69606
+Store misses: 12919
+Total cycles: 17483793
+Load Hit Percentage: 94.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 17483793
+----------------------------------------
+
+Configuration: sets=64, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 207404
+Load misses: 13264
+Store hits: 69519
+Store misses: 13006
+Total cycles: 17763093
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 84.00%
+Total Cycles: 17763093
+----------------------------------------
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 196929
+Load misses: 23739
+Store hits: 55322
+Store misses: 27203
+Total cycles: 18024090
+Load Hit Percentage: 89.00%
+Store Hit Percentage: 67.00%
+Total Cycles: 18024090
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 206490
+Load misses: 14178
+Store hits: 68489
+Store misses: 14036
+Total cycles: 18437693
+Load Hit Percentage: 93.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 18437693
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 201533
+Load misses: 19135
+Store hits: 68135
+Store misses: 14390
+Total cycles: 19608448
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 19608448
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 201061
+Load misses: 19607
+Store hits: 67578
+Store misses: 14947
+Total cycles: 20522720
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 20522720
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 201533
+Load misses: 19135
+Store hits: 68135
+Store misses: 14390
+Total cycles: 20526693
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 82.00%
+Total Cycles: 20526693
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 189926
+Load misses: 30742
+Store hits: 54672
+Store misses: 27853
+Total cycles: 20824640
+Load Hit Percentage: 86.00%
+Store Hit Percentage: 66.00%
+Total Cycles: 20824640
+----------------------------------------
+
+Configuration: sets=16, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 201061
+Load misses: 19607
+Store hits: 67578
+Store misses: 14947
+Total cycles: 20882593
+Load Hit Percentage: 91.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 20882593
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 188148
+Load misses: 32520
+Store hits: 53637
+Store misses: 28888
+Total cycles: 21534805
+Load Hit Percentage: 85.00%
+Store Hit Percentage: 64.00%
+Total Cycles: 21534805
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 198745
+Load misses: 21923
+Store hits: 67364
+Store misses: 15161
+Total cycles: 21791767
+Load Hit Percentage: 90.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 21791767
+----------------------------------------
+
+Configuration: sets=32, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 198745
+Load misses: 21923
+Store hits: 67364
+Store misses: 15161
+Total cycles: 21873193
+Load Hit Percentage: 90.00%
+Store Hit Percentage: 81.00%
+Total Cycles: 21873193
+----------------------------------------
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 194148
+Load misses: 26520
+Store hits: 68574
+Store misses: 13951
+Total cycles: 21967745
+Load Hit Percentage: 87.00%
+Store Hit Percentage: 83.00%
+Total Cycles: 21967745
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 186358
+Load misses: 34310
+Store hits: 53747
+Store misses: 28778
+Total cycles: 22250915
+Load Hit Percentage: 84.00%
+Store Hit Percentage: 65.00%
+Total Cycles: 22250915
+----------------------------------------
+
+Configuration: sets=128, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 194148
+Load misses: 26520
+Store hits: 68574
+Store misses: 13951
+Total cycles: 23348993
+Load Hit Percentage: 87.00%
+Store Hit Percentage: 83.00%
+Total Cycles: 23348993
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 176058
+Load misses: 44610
+Store hits: 54247
+Store misses: 28278
+Total cycles: 26371415
+Load Hit Percentage: 79.00%
+Store Hit Percentage: 65.00%
+Total Cycles: 26371415
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 173686
+Load misses: 46982
+Store hits: 53434
+Store misses: 29091
+Total cycles: 27319402
+Load Hit Percentage: 78.00%
+Store Hit Percentage: 64.00%
+Total Cycles: 27319402
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 185119
+Load misses: 35549
+Store hits: 66100
+Store misses: 16425
+Total cycles: 27508646
+Load Hit Percentage: 83.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 27508646
+----------------------------------------
+
+Configuration: sets=64, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 185119
+Load misses: 35549
+Store hits: 66100
+Store misses: 16425
+Total cycles: 27702793
+Load Hit Percentage: 83.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 27702793
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 181363
+Load misses: 39305
+Store hits: 66387
+Store misses: 16138
+Total cycles: 29119093
+Load Hit Percentage: 82.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 29119093
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 181363
+Load misses: 39305
+Store hits: 66387
+Store misses: 16138
+Total cycles: 29691622
+Load Hit Percentage: 82.00%
+Store Hit Percentage: 80.00%
+Total Cycles: 29691622
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 166967
+Load misses: 53701
+Store hits: 51726
+Store misses: 30799
+Total cycles: 30005294
+Load Hit Percentage: 75.00%
+Store Hit Percentage: 62.00%
+Total Cycles: 30005294
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 174715
+Load misses: 45953
+Store hits: 64695
+Store misses: 17830
+Total cycles: 32285893
+Load Hit Percentage: 79.00%
+Store Hit Percentage: 78.00%
+Total Cycles: 32285893
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 170719
+Load misses: 49949
+Store hits: 65910
+Store misses: 16615
+Total cycles: 33519793
+Load Hit Percentage: 77.00%
+Store Hit Percentage: 79.00%
+Total Cycles: 33519793
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 170719
+Load misses: 49949
+Store hits: 65910
+Store misses: 16615
+Total cycles: 34019948
+Load Hit Percentage: 77.00%
+Store Hit Percentage: 79.00%
+Total Cycles: 34019948
+----------------------------------------
+
+Configuration: sets=8, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 174715
+Load misses: 45953
+Store hits: 64695
+Store misses: 17830
+Total cycles: 34965749
+Load Hit Percentage: 79.00%
+Store Hit Percentage: 78.00%
+Total Cycles: 34965749
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 167297
+Load misses: 53371
+Store hits: 64363
+Store misses: 18162
+Total cycles: 35352693
+Load Hit Percentage: 75.00%
+Store Hit Percentage: 77.00%
+Total Cycles: 35352693
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 163822
+Load misses: 56846
+Store hits: 63126
+Store misses: 19399
+Total cycles: 37113793
+Load Hit Percentage: 74.00%
+Store Hit Percentage: 76.00%
+Total Cycles: 37113793
+----------------------------------------
+
+Configuration: sets=16, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 167297
+Load misses: 53371
+Store hits: 64363
+Store misses: 18162
+Total cycles: 37308634
+Load Hit Percentage: 75.00%
+Store Hit Percentage: 77.00%
+Total Cycles: 37308634
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 145700
+Load misses: 74968
+Store hits: 48013
+Store misses: 34512
+Total cycles: 38508381
+Load Hit Percentage: 66.00%
+Store Hit Percentage: 58.00%
+Total Cycles: 38508381
+----------------------------------------
+
+Configuration: sets=32, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 163822
+Load misses: 56846
+Store hits: 63126
+Store misses: 19399
+Total cycles: 39871338
+Load Hit Percentage: 74.00%
+Store Hit Percentage: 76.00%
+Total Cycles: 39871338
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 138664
+Load misses: 82004
+Store hits: 46292
+Store misses: 36233
+Total cycles: 41321060
+Load Hit Percentage: 62.00%
+Store Hit Percentage: 56.00%
+Total Cycles: 41321060
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 125783
+Load misses: 94885
+Store hits: 47859
+Store misses: 34666
+Total cycles: 46475027
+Load Hit Percentage: 57.00%
+Store Hit Percentage: 57.00%
+Total Cycles: 46475027
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 119625
+Load misses: 101043
+Store hits: 49321
+Store misses: 33204
+Total cycles: 48939689
+Load Hit Percentage: 54.00%
+Store Hit Percentage: 59.00%
+Total Cycles: 48939689
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 136879
+Load misses: 83789
+Store hits: 57585
+Store misses: 24940
+Total cycles: 49553293
+Load Hit Percentage: 62.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 49553293
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 114126
+Load misses: 106542
+Store hits: 49387
+Store misses: 33138
+Total cycles: 51139355
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 59.00%
+Total Cycles: 51139355
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 132826
+Load misses: 87842
+Store hits: 56747
+Store misses: 25778
+Total cycles: 51425893
+Load Hit Percentage: 60.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 51425893
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 136879
+Load misses: 83789
+Store hits: 57585
+Store misses: 24940
+Total cycles: 54222948
+Load Hit Percentage: 62.00%
+Store Hit Percentage: 69.00%
+Total Cycles: 54222948
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 124365
+Load misses: 96303
+Store hits: 58062
+Store misses: 24463
+Total cycles: 54415793
+Load Hit Percentage: 56.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 54415793
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 116743
+Load misses: 103925
+Store hits: 61467
+Store misses: 21058
+Total cycles: 56443093
+Load Hit Percentage: 52.00%
+Store Hit Percentage: 74.00%
+Total Cycles: 56443093
+----------------------------------------
+
+Configuration: sets=4, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 132826
+Load misses: 87842
+Store hits: 56747
+Store misses: 25778
+Total cycles: 58107144
+Load Hit Percentage: 60.00%
+Store Hit Percentage: 68.00%
+Total Cycles: 58107144
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 112789
+Load misses: 107879
+Store hits: 60282
+Store misses: 22243
+Total cycles: 58380193
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 73.00%
+Total Cycles: 58380193
+----------------------------------------
+
+Configuration: sets=16, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 124365
+Load misses: 96303
+Store hits: 58062
+Store misses: 24463
+Total cycles: 59124688
+Load Hit Percentage: 56.00%
+Store Hit Percentage: 70.00%
+Total Cycles: 59124688
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 116743
+Load misses: 103925
+Store hits: 61467
+Store misses: 21058
+Total cycles: 61240652
+Load Hit Percentage: 52.00%
+Store Hit Percentage: 74.00%
+Total Cycles: 61240652
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 85036
+Load misses: 135632
+Store hits: 31976
+Store misses: 50549
+Total cycles: 62757944
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 38.00%
+Total Cycles: 62757944
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 83399
+Load misses: 137269
+Store hits: 38963
+Store misses: 43562
+Total cycles: 63419731
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 47.00%
+Total Cycles: 63419731
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 82872
+Load misses: 137796
+Store hits: 33481
+Store misses: 49044
+Total cycles: 63625049
+Load Hit Percentage: 37.00%
+Store Hit Percentage: 40.00%
+Total Cycles: 63625049
+----------------------------------------
+
+Configuration: sets=8, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 112789
+Load misses: 107879
+Store hits: 60282
+Store misses: 22243
+Total cycles: 64432187
+Load Hit Percentage: 51.00%
+Store Hit Percentage: 73.00%
+Total Cycles: 64432187
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 76968
+Load misses: 143700
+Store hits: 30969
+Store misses: 51556
+Total cycles: 65984137
+Load Hit Percentage: 34.00%
+Store Hit Percentage: 37.00%
+Total Cycles: 65984137
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 75949
+Load misses: 144719
+Store hits: 29373
+Store misses: 53152
+Total cycles: 66390141
+Load Hit Percentage: 34.00%
+Store Hit Percentage: 35.00%
+Total Cycles: 66390141
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 84499
+Load misses: 136169
+Store hits: 51697
+Store misses: 30828
+Total cycles: 72271693
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 62.00%
+Total Cycles: 72271693
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 87009
+Load misses: 133659
+Store hits: 47853
+Store misses: 34672
+Total cycles: 72420893
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 57.00%
+Total Cycles: 72420893
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 59766
+Load misses: 160902
+Store hits: 23843
+Store misses: 58682
+Total cycles: 72857811
+Load Hit Percentage: 27.00%
+Store Hit Percentage: 28.00%
+Total Cycles: 72857811
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 85621
+Load misses: 135047
+Store hits: 47789
+Store misses: 34736
+Total cycles: 72995293
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 57.00%
+Total Cycles: 72995293
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 59277
+Load misses: 161391
+Store hits: 22390
+Store misses: 60135
+Total cycles: 73051958
+Load Hit Percentage: 26.00%
+Store Hit Percentage: 27.00%
+Total Cycles: 73051958
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 58925
+Load misses: 161743
+Store hits: 25609
+Store misses: 56916
+Total cycles: 73195977
+Load Hit Percentage: 26.00%
+Store Hit Percentage: 31.00%
+Total Cycles: 73195977
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 58888
+Load misses: 161780
+Store hits: 22778
+Store misses: 59747
+Total cycles: 73207946
+Load Hit Percentage: 26.00%
+Store Hit Percentage: 27.00%
+Total Cycles: 73207946
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 87955
+Load misses: 132713
+Store hits: 43745
+Store misses: 38780
+Total cycles: 73274893
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 53.00%
+Total Cycles: 73274893
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 58263
+Load misses: 162405
+Store hits: 23790
+Store misses: 58735
+Total cycles: 73458958
+Load Hit Percentage: 26.00%
+Store Hit Percentage: 28.00%
+Total Cycles: 73458958
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 86381
+Load misses: 134287
+Store hits: 44081
+Store misses: 38444
+Total cycles: 73803693
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 53.00%
+Total Cycles: 73803693
+----------------------------------------
+
+Configuration: sets=8, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 84499
+Load misses: 136169
+Store hits: 51697
+Store misses: 30828
+Total cycles: 79491029
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 62.00%
+Total Cycles: 79491029
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 42481
+Load misses: 178187
+Store hits: 12438
+Store misses: 70087
+Total cycles: 79760406
+Load Hit Percentage: 19.00%
+Store Hit Percentage: 15.00%
+Total Cycles: 79760406
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 42079
+Load misses: 178589
+Store hits: 12537
+Store misses: 69988
+Total cycles: 79921305
+Load Hit Percentage: 19.00%
+Store Hit Percentage: 15.00%
+Total Cycles: 79921305
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 87009
+Load misses: 133659
+Store hits: 47853
+Store misses: 34672
+Total cycles: 80057962
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 57.00%
+Total Cycles: 80057962
+----------------------------------------
+
+Configuration: sets=4, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 85621
+Load misses: 135047
+Store hits: 47789
+Store misses: 34736
+Total cycles: 80400948
+Load Hit Percentage: 38.00%
+Store Hit Percentage: 57.00%
+Total Cycles: 80400948
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 40705
+Load misses: 179963
+Store hits: 12489
+Store misses: 70036
+Total cycles: 80470857
+Load Hit Percentage: 18.00%
+Store Hit Percentage: 15.00%
+Total Cycles: 80470857
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 87955
+Load misses: 132713
+Store hits: 43745
+Store misses: 38780
+Total cycles: 83052541
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 53.00%
+Total Cycles: 83052541
+----------------------------------------
+
+Configuration: sets=2, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 86381
+Load misses: 134287
+Store hits: 44081
+Store misses: 38444
+Total cycles: 83154387
+Load Hit Percentage: 39.00%
+Store Hit Percentage: 53.00%
+Total Cycles: 83154387
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 33628
+Load misses: 187040
+Store hits: 10097
+Store misses: 72428
+Total cycles: 83299265
+Load Hit Percentage: 15.00%
+Store Hit Percentage: 12.00%
+Total Cycles: 83299265
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 64400
+Load misses: 156268
+Store hits: 40077
+Store misses: 42448
+Total cycles: 83797293
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 48.00%
+Total Cycles: 83797293
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 64398
+Load misses: 156270
+Store hits: 39571
+Store misses: 42954
+Total cycles: 83949893
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 47.00%
+Total Cycles: 83949893
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 63956
+Load misses: 156712
+Store hits: 40031
+Store misses: 42494
+Total cycles: 83988693
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 48.00%
+Total Cycles: 83988693
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 61831
+Load misses: 158837
+Store hits: 41537
+Store misses: 40988
+Total cycles: 84386893
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 50.00%
+Total Cycles: 84386893
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 62710
+Load misses: 157958
+Store hits: 39287
+Store misses: 43238
+Total cycles: 84710293
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 47.00%
+Total Cycles: 84710293
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 53366
+Load misses: 167302
+Store hits: 26443
+Store misses: 56082
+Total cycles: 92301093
+Load Hit Percentage: 24.00%
+Store Hit Percentage: 32.00%
+Total Cycles: 92301093
+----------------------------------------
+
+Configuration: sets=4, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 61831
+Load misses: 158837
+Store hits: 41537
+Store misses: 40988
+Total cycles: 92366432
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 50.00%
+Total Cycles: 92366432
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 52003
+Load misses: 168665
+Store hits: 25999
+Store misses: 56526
+Total cycles: 92979493
+Load Hit Percentage: 23.00%
+Store Hit Percentage: 31.00%
+Total Cycles: 92979493
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 51808
+Load misses: 168860
+Store hits: 26017
+Store misses: 56508
+Total cycles: 93052093
+Load Hit Percentage: 23.00%
+Store Hit Percentage: 31.00%
+Total Cycles: 93052093
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 64400
+Load misses: 156268
+Store hits: 40077
+Store misses: 42448
+Total cycles: 93256818
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 48.00%
+Total Cycles: 93256818
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 64398
+Load misses: 156270
+Store hits: 39571
+Store misses: 42954
+Total cycles: 93473883
+Load Hit Percentage: 29.00%
+Store Hit Percentage: 47.00%
+Total Cycles: 93473883
+----------------------------------------
+
+Configuration: sets=2, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 63956
+Load misses: 156712
+Store hits: 40031
+Store misses: 42494
+Total cycles: 93500365
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 48.00%
+Total Cycles: 93500365
+----------------------------------------
+
+Configuration: sets=1, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 62710
+Load misses: 157958
+Store hits: 39287
+Store misses: 43238
+Total cycles: 94319791
+Load Hit Percentage: 28.00%
+Store Hit Percentage: 47.00%
+Total Cycles: 94319791
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 46273
+Load misses: 174395
+Store hits: 18819
+Store misses: 63706
+Total cycles: 97425493
+Load Hit Percentage: 20.00%
+Store Hit Percentage: 22.00%
+Total Cycles: 97425493
+----------------------------------------
+
+Configuration: sets=2, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 53366
+Load misses: 167302
+Store hits: 26443
+Store misses: 56082
+Total cycles: 99053389
+Load Hit Percentage: 24.00%
+Store Hit Percentage: 32.00%
+Total Cycles: 99053389
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=lru, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 52003
+Load misses: 168665
+Store hits: 25999
+Store misses: 56526
+Total cycles: 99594949
+Load Hit Percentage: 23.00%
+Store Hit Percentage: 31.00%
+Total Cycles: 99594949
+----------------------------------------
+
+Configuration: sets=1, blocks=2, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 51808
+Load misses: 168860
+Store hits: 26017
+Store misses: 56508
+Total cycles: 99697999
+Load Hit Percentage: 23.00%
+Store Hit Percentage: 31.00%
+Total Cycles: 99697999
+----------------------------------------
+
+Configuration: sets=1, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=swim.trace
+Total loads: 220668
+Total stores: 82525
+Load hits: 46273
+Load misses: 174395
+Store hits: 18819
+Store misses: 63706
+Total cycles: 102956193
+Load Hit Percentage: 20.00%
+Store Hit Percentage: 22.00%
+Total Cycles: 102956193
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=write01.trace
+Total loads: 0
+Total stores: 5
+Load hits: 0
+Load misses: 0
+Store hits: 0
+Store misses: 5
+Total cycles: 500
+Load Hit Percentage: N/A%
+Store Hit Percentage: 0%
+Total Cycles: 500
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=write01.trace
+Total loads: 0
+Total stores: 5
+Load hits: 0
+Load misses: 0
+Store hits: 2
+Store misses: 3
+Total cycles: 1205
+Load Hit Percentage: N/A%
+Store Hit Percentage: 40.00%
+Total Cycles: 1205
+----------------------------------------
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=write01.trace
+Total loads: 0
+Total stores: 5
+Load hits: 0
+Load misses: 0
+Store hits: 2
+Store misses: 3
+Total cycles: 1405
+Load Hit Percentage: N/A%
+Store Hit Percentage: 40.00%
+Total Cycles: 1405
+----------------------------------------
+
+Configuration: sets=256, blocks=1, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=write01.trace
+Total loads: 0
+Total stores: 5
+Load hits: 0
+Load misses: 0
+Store hits: 2
+Store misses: 3
+Total cycles: 1604
+Load Hit Percentage: N/A%
 Store Hit Percentage: 40.00%
 Total Cycles: 1604
 ----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1604
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=write01.trace
-Load Hit Percentage: %
-Store Hit Percentage: 40.00%
-Total Cycles: 1205
-----------------------------------------
-Processing trace: write02.trace
-Configuration: sets=1, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-back, trace=write02.trace
+Total loads: 0
+Total stores: 10
+Load hits: 0
+Load misses: 0
+Store hits: 9
+Store misses: 1
+Total cycles: 410
+Load Hit Percentage: N/A%
 Store Hit Percentage: 90.00%
 Total Cycles: 410
 ----------------------------------------
-Configuration: sets=1, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=no-write-allocate, write_policy=write-through, trace=write02.trace
+Total loads: 0
+Total stores: 10
+Load hits: 0
+Load misses: 0
+Store hits: 0
+Store misses: 10
+Total cycles: 1000
+Load Hit Percentage: N/A%
+Store Hit Percentage: 0%
+Total Cycles: 1000
 ----------------------------------------
-Configuration: sets=1, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
+
+Configuration: sets=256, blocks=4, eviction=fifo, write_alloc=write-allocate, write_policy=write-through, trace=write02.trace
+Total loads: 0
+Total stores: 10
+Load hits: 0
+Load misses: 0
+Store hits: 9
+Store misses: 1
+Total cycles: 1310
+Load Hit Percentage: N/A%
 Store Hit Percentage: 90.00%
-Total Cycles: 410
+Total Cycles: 1310
 ----------------------------------------
-Configuration: sets=1, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=1, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=2, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=4, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=8, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=16, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=32, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=64, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=128, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=1, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=2, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=lru, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-Configuration: sets=256, blocks=4, policy=fifo, trace=write02.trace
-Load Hit Percentage: %
-Store Hit Percentage: 90.00%
-Total Cycles: 410
-----------------------------------------
-102956193 - sets=1, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 20.00%, Store Hit Percentage: 22.00%
-41915429 - sets=8, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 84.00%, Store Hit Percentage: 88.00%
-13989418 - sets=32, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 96.00%, Store Hit Percentage: 94.00%
-146863268 - sets=1, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 37.00%, Store Hit Percentage: 51.00%
-15903193 - sets=32, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 94.00%, Store Hit Percentage: 84.00%
-29637605 - sets=32, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 89.00%, Store Hit Percentage: 92.00%
-148711244 - sets=1, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 37.00%, Store Hit Percentage: 50.00%
-22266784 - sets=64, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 92.00%, Store Hit Percentage: 93.00%
-93500365 - sets=2, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 28.00%, Store Hit Percentage: 48.00%
-16178653 - sets=64, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 93.00%, Store Hit Percentage: 84.00%
-46235632 - sets=64, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 81.00%, Store Hit Percentage: 88.00%
-19773727 - sets=256, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 93.00%, Store Hit Percentage: 93.00%
-147549525 - sets=2, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 38.00%, Store Hit Percentage: 52.00%
-2009 - sets=4, blocks=1, policy=fifo, trace=read03.trace - Load Hit Percentage: 44.00%, Store Hit Percentage: %
-39059280 - sets=16, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 84.00%, Store Hit Percentage: 89.00%
-173795687 - sets=1, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 21.00%, Store Hit Percentage: 32.00%
-20234329 - sets=64, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 93.00%, Store Hit Percentage: 93.00%
-80566504 - sets=8, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 68.00%, Store Hit Percentage: 77.00%
-99697999 - sets=1, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 23.00%, Store Hit Percentage: 31.00%
-29691622 - sets=8, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 82.00%, Store Hit Percentage: 80.00%
-83926262 - sets=4, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 68.00%, Store Hit Percentage: 76.00%
-145954587 - sets=2, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 38.00%, Store Hit Percentage: 52.00%
-118136446 - sets=2, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 53.00%, Store Hit Percentage: 63.00%
-13579495 - sets=32, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 95.00%, Store Hit Percentage: 85.00%
-2809 - sets=1, blocks=1, policy=fifo, trace=read03.trace - Load Hit Percentage: 22.00%, Store Hit Percentage: %
-93256818 - sets=2, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 29.00%, Store Hit Percentage: 48.00%
-12749904 - sets=64, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 97.00%, Store Hit Percentage: 94.00%
-83052541 - sets=2, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 39.00%, Store Hit Percentage: 53.00%
-9178385 - sets=256, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 95.00%
-39871338 - sets=32, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 74.00%, Store Hit Percentage: 76.00%
-11139325 - sets=64, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 97.00%, Store Hit Percentage: 86.00%
-8483931 - sets=256, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 99.00%, Store Hit Percentage: 87.00%
-162151011 - sets=1, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 29.00%, Store Hit Percentage: 42.00%
-92366432 - sets=4, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 28.00%, Store Hit Percentage: 50.00%
-59124688 - sets=16, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 56.00%, Store Hit Percentage: 70.00%
-80400948 - sets=4, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 38.00%, Store Hit Percentage: 57.00%
-93473883 - sets=1, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 29.00%, Store Hit Percentage: 47.00%
-34965749 - sets=8, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 79.00%, Store Hit Percentage: 78.00%
-121871970 - sets=4, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 50.00%, Store Hit Percentage: 63.00%
-20522720 - sets=16, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 91.00%, Store Hit Percentage: 81.00%
-27508646 - sets=64, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 83.00%, Store Hit Percentage: 80.00%
-24396850 - sets=16, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 92.00%, Store Hit Percentage: 92.00%
-74578571 - sets=8, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 70.00%, Store Hit Percentage: 79.00%
-147973829 - sets=4, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 37.00%, Store Hit Percentage: 51.00%
-19608448 - sets=32, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 91.00%, Store Hit Percentage: 82.00%
-34019948 - sets=16, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 77.00%, Store Hit Percentage: 79.00%
-1609 - sets=256, blocks=4, policy=fifo, trace=read03.trace - Load Hit Percentage: 55.00%, Store Hit Percentage: %
-1604 - sets=256, blocks=1, policy=fifo, trace=write01.trace - Load Hit Percentage: %, Store Hit Percentage: 40.00%
-10366023 - sets=256, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 86.00%
-37308634 - sets=16, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 75.00%, Store Hit Percentage: 77.00%
-11149847 - sets=256, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 94.00%
-64432187 - sets=8, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 51.00%, Store Hit Percentage: 73.00%
-115022197 - sets=8, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 51.00%, Store Hit Percentage: 67.00%
-162645976 - sets=1, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 29.00%, Store Hit Percentage: 42.00%
-10483553 - sets=256, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 95.00%
-117634916 - sets=4, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 51.00%, Store Hit Percentage: 65.00%
-32478453 - sets=128, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 87.00%, Store Hit Percentage: 90.00%
-16799537 - sets=16, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 93.00%, Store Hit Percentage: 82.00%
-16386605 - sets=32, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 95.00%, Store Hit Percentage: 93.00%
-14403181 - sets=128, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 96.00%, Store Hit Percentage: 94.00%
-27304122 - sets=32, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 89.00%, Store Hit Percentage: 92.00%
-14508120 - sets=64, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 94.00%, Store Hit Percentage: 84.00%
-11529686 - sets=128, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 97.00%, Store Hit Percentage: 86.00%
-1205 - sets=256, blocks=4, policy=fifo, trace=write01.trace - Load Hit Percentage: %, Store Hit Percentage: 40.00%
-42252772 - sets=16, blocks=2, policy=fifo, trace=gcc.trace - Load Hit Percentage: 83.00%, Store Hit Percentage: 89.00%
-13126162 - sets=128, blocks=2, policy=lru, trace=gcc.trace - Load Hit Percentage: 97.00%, Store Hit Percentage: 94.00%
-56454546 - sets=32, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 76.00%, Store Hit Percentage: 85.00%
-72692485 - sets=4, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 71.00%, Store Hit Percentage: 80.00%
-9863511 - sets=128, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 95.00%
-76469235 - sets=16, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 67.00%, Store Hit Percentage: 80.00%
-35681259 - sets=8, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 86.00%, Store Hit Percentage: 90.00%
-13528256 - sets=256, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 95.00%, Store Hit Percentage: 85.00%
-10401594 - sets=128, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 86.00%
-124208283 - sets=2, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 51.00%, Store Hit Percentage: 61.00%
-54222948 - sets=4, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 62.00%, Store Hit Percentage: 69.00%
-164291507 - sets=2, blocks=1, policy=fifo, trace=gcc.trace - Load Hit Percentage: 27.00%, Store Hit Percentage: 40.00%
-11166458 - sets=64, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 94.00%
-21791767 - sets=32, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 90.00%, Store Hit Percentage: 81.00%
-61240652 - sets=8, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 52.00%, Store Hit Percentage: 74.00%
-13026609 - sets=128, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 96.00%, Store Hit Percentage: 85.00%
-410 - sets=256, blocks=4, policy=fifo, trace=write02.trace - Load Hit Percentage: %, Store Hit Percentage: 90.00%
-9194799 - sets=256, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 99.00%, Store Hit Percentage: 86.00%
-10694274 - sets=128, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 95.00%
-79491029 - sets=8, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 38.00%, Store Hit Percentage: 62.00%
-58107144 - sets=4, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 60.00%, Store Hit Percentage: 68.00%
-80057962 - sets=4, blocks=2, policy=fifo, trace=swim.trace - Load Hit Percentage: 39.00%, Store Hit Percentage: 57.00%
-21967745 - sets=128, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 87.00%, Store Hit Percentage: 83.00%
-99053389 - sets=2, blocks=1, policy=fifo, trace=swim.trace - Load Hit Percentage: 24.00%, Store Hit Percentage: 32.00%
-9129502 - sets=256, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 86.00%
-9678770 - sets=256, blocks=4, policy=fifo, trace=gcc.trace - Load Hit Percentage: 98.00%, Store Hit Percentage: 95.00%
-94319791 - sets=1, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 28.00%, Store Hit Percentage: 47.00%
-20714551 - sets=16, blocks=4, policy=lru, trace=gcc.trace - Load Hit Percentage: 93.00%, Store Hit Percentage: 93.00%
-12554742 - sets=64, blocks=4, policy=fifo, trace=swim.trace - Load Hit Percentage: 96.00%, Store Hit Percentage: 85.00%
-99594949 - sets=1, blocks=2, policy=lru, trace=swim.trace - Load Hit Percentage: 23.00%, Store Hit Percentage: 31.00%
-9015245 - sets=128, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 99.00%, Store Hit Percentage: 87.00%
-83154387 - sets=2, blocks=4, policy=lru, trace=swim.trace - Load Hit Percentage: 39.00%, Store Hit Percentage: 53.00%
+

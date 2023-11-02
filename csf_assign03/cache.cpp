@@ -140,17 +140,18 @@ void Cache::storeAddress(string address) {
             slot->setDirty(true);
             totalCycles++;
         } else { // writeThru
-            totalCycles += 100; // We are only writing a 4-byte value   // (100 * (blockSize / 4));
+            totalCycles += 100; // We are only writing a 4-byte value  
             totalCycles++;
         }
     } else { //miss
         storeMisses++;
 
         if(writeAllocate) {
-
+            // Check if we need to evict a dirty bit when loading to cache
             bool evicted = sets[index].addSlot(tag, lru, fifo, globalCounter);
             Slot* slot = sets[index].getSlot(tag, globalCounter);
 
+            // Perform write-hit operation
             if(evicted && slot->isDirty()) {
                 totalCycles += (100 * (blockSize / 4));
                 slot->setDirty(false);
@@ -161,6 +162,7 @@ void Cache::storeAddress(string address) {
             totalCycles += 100 * (blockSize / 4);
         }
 
+        // Write directly to main memory the 4-byte value
         if(noWriteAllocate) {
             totalCycles += 100;
         }
