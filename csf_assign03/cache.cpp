@@ -108,8 +108,13 @@ void Cache::loadAddress(string address) {
         loadMisses++;
         // Set the tag for the slot
         bool evicted = sets.at(index).addSlot(tag, lru, fifo, globalCounter);
-        if(evicted) {
+        if(evicted && writeBack) {
             totalCycles += (100 * (blockSize / 4));
+        } else {
+            // Update cycle:
+            // Loading from main memory + load to cache,
+            totalCycles += (100 * (blockSize / 4));
+            totalCycles++;
         }
 
         Slot* slot = sets.at(index).getSlot(tag, globalCounter);
@@ -118,10 +123,6 @@ void Cache::loadAddress(string address) {
         slot->setValid(true);
         slot->setTag(tag);
 
-        // Update cycle:
-        // Loading from main memory + load to cache,
-        totalCycles += (100 * (blockSize / 4));
-        totalCycles++;
     }
     // Increment Total Loads
     totalLoads++;
@@ -158,8 +159,8 @@ void Cache::storeAddress(string address) {
             slot->setDirty(true);
             totalCycles++;
         } else { // writeThru
-            totalCycles += 100;      // (100 * (blockSize / 4));
-            totalCycles++;
+            totalCycles += (100 * (blockSize / 4)); //conceptually +100 is not correct, either add 1 or 100 * (n/4)
+            // totalCycles++;
         }
 
         // if(writeThru) { //write to cache and memory
@@ -178,24 +179,22 @@ void Cache::storeAddress(string address) {
         if(writeAllocate) {
 
             bool evicted = sets[index].addSlot(tag, lru, fifo, globalCounter);
-            if(evicted) {
+            if(evicted && writeBack) {
                 totalCycles += (100 * (blockSize / 4));
             }
 
-            if(writeBack) {
+            if(!evicted && writeBack) {
                 sets[index].getSlot(tag, globalCounter)->setDirty(true);
+                totalCycles++;
             }
 
-            // if(lru) {
-            //     sets[index].getSlot(tag)->setAccess_ts(counter);
-            // }
-            totalCycles++;
+            if(!evicted && writeThru) {
+                totalCycles++;
+                totalCycles += (100 * (blockSize / 4));                
+            }
+        } else {
             totalCycles += (100 * (blockSize / 4));
-        }
-
-        if(noWriteAllocate) {
-            // totalCycles += 100;//(100 * (blockSize / 4));
-            totalCycles++;
+            // totalCycles++;
         }
         
     }
